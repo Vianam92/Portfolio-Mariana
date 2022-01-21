@@ -1,0 +1,87 @@
+@mixin title-h2 {
+    font-size: 1.5rem;
+    margin: 10px;
+    text-decoration: $colorBlue;
+    width: 100%;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    text-transform: capitalize;
+};
+$colorBlue: #054752;
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    border: solid $colorBlue 2px;
+    padding: 15px;
+    /*box-shadow: 3px 5px 20px rgba(0, 0, 0, .5);*/
+    background-color: rgba(118, 174, 241, 1);
+    margin-bottom: 100px;
+    scroll-margin-top: 80px;
+
+    @media all and(min-width:1200px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    &__h2 {
+        @include title-h2;
+
+        @media all and (min-width:768px) {
+            font-size: 2rem;
+        }
+
+        @media all and (min-width:1200px) {
+            font-size: 2.5rem;
+            width: 60%;
+            text-align: end;
+        }
+    }
+
+    &__images {
+        width: 100%;
+        text-align: center;
+
+        @media all and (min-width:1200px) {
+            width: 40%;
+        }
+
+        &--photo {
+            width: 150px;
+            height: 200px;
+            margin: 15px;
+            object-fit: contain;
+            border: $colorBlue 2px solid;
+            box-shadow: -2px -2px 10px $colorBlue;
+
+            @media all and(min-width:1200px) {
+                width: 270px;
+                height: 350px;
+
+            }
+        }
+    };
+
+    &__description {
+        font-size: 1rem;
+        text-align: justify;
+        margin: 10px 5px;
+        font-family: 'Luxurious Roman', cursive;
+
+
+        @media all and (min-width:768px) {
+            font-size: 1.5rem;
+            width: 60%;
+        }
+
+        @media all and (min-width:1200px) {
+            margin: 10px 0;
+            font-size: 1.6rem;
+            width: 50%;
+        }
+    }
+};

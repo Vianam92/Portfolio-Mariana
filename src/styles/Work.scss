@@ -1,0 +1,77 @@
+$color-blue:#054752;
+
+@mixin title-h2 {
+    font-size: 1.5rem;
+    margin: 15px 10px;
+    text-decoration: $color-blue;
+    width: 100%;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    text-transform: capitalize;
+};
+
+@mixin icon {
+    width: 40px;
+    font-size: 20px;
+    color: #054752;
+    margin:10px;
+    padding:5px;
+};
+
+.project{
+    margin:15px;
+    margin-top:50px;
+    margin-bottom:50px;
+    border:solid 2px $color-blue;
+    box-shadow: 3px 5px 20px rgba(0,0,0,.5);
+    scroll-margin-top:80px;
+    background-color: rgba(118, 174, 241, 1);
+    @media all and (min-width:768px){
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    &__title{
+        @include title-h2;
+    }
+    &__section{
+        display:flex;
+        flex-direction: column;
+        border:solid 2px $color-blue;
+        align-items: center;
+        margin-bottom:20px;
+        background-color: white;
+        justify-content: space-around;
+        @media all and (min-width:768px){
+            width: 25%;
+            margin:20px;
+            box-shadow: 3px 5px 20px rgba(0,0,0,.5);
+        }
+        &--image{
+            width: 100%;
+            object-fit: cover;
+        }
+        &--tecnolog{
+            margin: 10px;
+            border-top:solid 2px $color-blue;
+    box-shadow: 3px 5px 20px rgba(0,0,0,.5);
+        }
+    }
+}
+.link-projects{
+    width: 100%;
+    text-align: center;
+    border-top:solid 2px $color-blue;
+    box-shadow: 3px 5px 20px rgba(0,0,0,.5);
+    &__icon{
+        @include icon;
+    }
+    &__demo{
+       @include icon;
+    }
+}
+
+.img{
+    width: 30px;
+}
