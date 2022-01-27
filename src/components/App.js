@@ -6,24 +6,32 @@ import AboutMe from "./AboutMe";
 import Work from "./Work";
 import Footer from "./Footer";
 import { Switch, Route } from "react-router-dom";
+import Skills from "./Skills";
+import {useState} from 'react';
+//import dataWork from '../services/work.json';
+//import Menu from "./Menu";
 
 function App() {
-  return (
-    <>
-      <Header />
+  //const [work, setWork] = useState(dataWork);
 
-        <Switch>
-          <Route exact path="/about-me">
+return (
+    <>
+      <Header/>
+      <Switch>
+          <Route path="/about-me" exact>
             <AboutMe />
+            <Skills/>
             <Footer/>
+      
           </Route>
-          <Route exact path="/projects">
-            <Work />
+          <Route path="/projects" exact>
+            <Work/>
             <Footer/>
+    
           </Route>
-          <Route exact path="/Inicio">
+          <Route path="/" exact>
             <Hero />
-            <Footer/>
+     
           </Route>
         </Switch>
     </>

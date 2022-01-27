@@ -1,11 +1,11 @@
-//import photo from '../images/photo.jpg';
 import "../styles/AboutMe.scss";
 import "../styles/Variables.scss";
 
 const AboutMe = () => {
   return (
     <article className="aboutMe" id="aboutMe">
-      <h2 className="aboutMe__h2">Sobre mí</h2>
+      <h2 className="aboutMe__h2">Sobre mí </h2>
+      
       <figure className="aboutMe__images">
         {/*<img src={photo} className="aboutMe__images--photo" alt="photoMariana"/>*/}
       </figure>

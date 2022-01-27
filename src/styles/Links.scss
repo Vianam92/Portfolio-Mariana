@@ -1,0 +1,21 @@
+.nav-contact{
+    display:flex;
+    justify-content: center;
+    margin:10px;
+    &__icons{
+        margin:5px;
+        padding:10px;
+        width: 40px;
+        @media all and (min-width:768px){
+         width: 50px;
+        }
+        &--link{
+            font-size: 20px;
+            padding:15px;
+            color:white;
+            @media all and (min-width:768px){
+                font-size: 35px;
+               }
+        }
+    }
+}

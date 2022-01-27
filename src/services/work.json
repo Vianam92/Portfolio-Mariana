@@ -1,0 +1,28 @@
+{
+  "work": [
+    {
+      "name": "Anonimus",
+      "image": "../images/proyectos/Anonimus-proxy.png",
+      "github": "https://github.com/Vianam92/Anonimus-Proxy",
+      "linkedin": "https://vianam92.github.io/Anonimus-Proxy/"
+    },
+    {
+      "name": "Página Spotify",
+      "image": "../images/proyectos/Spotify.png",
+      "github": "https://github.com/Vianam92/spotify",
+      "linkedin": "https://vianam92.github.io/spotify/"
+    },
+    {
+        "name": "Buscador de Series Anime",
+        "image": "../images/proyectos/search-anime.png",
+        "github": "http://github.com/Vianam92/modulo-2-evaluacion-final-Vianam92/",
+        "linkedin": "https://beta.adalab.es/modulo-2-evaluacion-final-Vianam92/"
+      },
+      {
+      "name": "Juego-Piedra-Papel-Tijeras",
+      "image": "../images/proyectos/juego-piedra-papel-tijeras.png",
+      "github": "https://github.com/Vianam92/juego-piedra-papel-tijeras",
+      "linkedin": "https://vianam92.github.io/juego-piedra-papel-tijeras/"
+    }
+  ]
+}

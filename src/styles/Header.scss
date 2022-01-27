@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   z-index: 2;
   width: 100%;
@@ -10,8 +10,8 @@
   &__nav {
     display: flex;
     flex-wrap: wrap;
-    background-color: #054752;
-    justify-content:center;
+    background-color: #8aa5aa6b;
+    justify-content: center;
     height: 60px;
     align-items: center;
 
@@ -25,11 +25,15 @@
   }
 }
 .link {
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding: 10px;
   color: white;
+  font-family: "Balsamiq Sans", cursive;
+  &:hover {
+    color: rgb(24, 171, 207);
+  }
   @media all and(min-width:768px) {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 }
 

@@ -1,6 +1,40 @@
 $font-family: "Playfair Display", serif;
 $font-roboto: "Roboto Slab", serif;
 $font-rubik: "Rubik", sans-serif;
+$color-blue: #054752;
+
+@mixin title-h2 {
+  font-size: 1.5rem;
+  margin: 10px 10px;
+  color: $color-blue;
+  width: 100%;
+  text-align: center;
+  font-family: "Balsamiq Sans", cursive;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 4s steps(60, end); 
+
+  @media all and (min-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media all and (min-width: 1200px) {
+    font-size: 2.5rem;
+  }
+
+  &:hover {
+    color: rgb(24, 171, 207);
+  }
+}
+
+@mixin icon {
+  width: 40px;
+  font-size: 20px;
+  color: #054752;
+  margin: 10px;
+  padding: 5px;
+}
 
 @mixin icon {
   width: 40px;
@@ -73,3 +107,5 @@ $font-rubik: "Rubik", sans-serif;
     transition: 800ms ease all;
   }
 }
+
+@keyframes typing { from { width: 0; } }

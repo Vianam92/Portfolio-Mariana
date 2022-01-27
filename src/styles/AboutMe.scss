@@ -1,33 +1,17 @@
-@mixin title-h2 {
-    font-size: 1.5rem;
-    margin: 10px;
-    text-decoration: $colorBlue;
-    width: 100%;
-    text-align: center;
-    font-family: 'Balsamiq Sans', cursive;
-    text-transform: capitalize;
-};
-$colorBlue: #054752;
+@import '../styles/Variables.scss';
 
 .aboutMe {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 15px;
-    border: solid $colorBlue 2px;
+    //border: solid $color-blue 2px;
     padding: 15px;
     /*box-shadow: 3px 5px 20px rgba(0, 0, 0, .5);*/
-    background-color: rgba(118, 174, 241, 1);
-    margin-bottom: 100px;
-    scroll-margin-top: 80px;
-
-    @media all and(min-width:1200px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: flex-start;
-    }
-
+    //background-color: rgba(118, 173, 241, 0.329);
+    margin-bottom: 50px;
+    //scroll-margin-top: 80px;
+    margin-top:80px;
     &__h2 {
         @include title-h2;
 
@@ -37,32 +21,6 @@ $colorBlue: #054752;
 
         @media all and (min-width:1200px) {
             font-size: 2.5rem;
-            width: 60%;
-            text-align: end;
-        }
-    }
-
-    &__images {
-        width: 100%;
-        text-align: center;
-
-        @media all and (min-width:1200px) {
-            width: 40%;
-        }
-
-        &--photo {
-            width: 150px;
-            height: 200px;
-            margin: 15px;
-            object-fit: contain;
-            border: $colorBlue 2px solid;
-            box-shadow: -2px -2px 10px $colorBlue;
-
-            @media all and(min-width:1200px) {
-                width: 270px;
-                height: 350px;
-
-            }
         }
     };
 
@@ -71,11 +29,11 @@ $colorBlue: #054752;
         text-align: justify;
         margin: 10px 5px;
         font-family: 'Luxurious Roman', cursive;
-
+        color: rgb(11, 40, 48);
 
         @media all and (min-width:768px) {
             font-size: 1.5rem;
-            width: 60%;
+            width: 95%;
         }
 
         @media all and (min-width:1200px) {
