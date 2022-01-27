@@ -49,6 +49,9 @@
     align-items: center;
     margin-bottom: 20px;
     background-color: white;
+    &:hover{
+      border: solid 5px rgb(4, 70, 75);
+    }
 
     @media all and (min-width: 768px) {
       width: 370px;
