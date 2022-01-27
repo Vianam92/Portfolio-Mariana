@@ -12,7 +12,7 @@ He descubierto algo que me apasiona, me motiva y que me reta.
 
 ## Herramientas utilizadas para realizar este proyecto.
 
-HTML5 / CSS3 / SASS / RESPONSIVE / MOVILEFIRST / FLEXBOX.
+HTML5 / CSS3 / SASS / RESPONSIVE / MOVILEFIRST / FLEXBOX / REACT.
 
 <HR>
 MUCHAS GRACIAS POR LEERME Y ESPERO QUE LES GUSTE MI PROYECTO.
