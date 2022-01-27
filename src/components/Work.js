@@ -54,8 +54,8 @@ const Work = () => {
             name="Hangman Game"
             image={hagman}
             alt="hagman"
-            LinkGitHub="https://github.com/Vianam92/promo-O-module-3-pair-9-sprint-2-hangman-game"
-            LinkPage="https://beta.adalab.es/promo-O-module-3-pair-9-sprint-2-hangman-game/"
+            LinkGitHub="https://github.com/Vianam92/hangman-game/"
+            LinkPage="https://vianam92.github.io/hangman-game/"
             html="uil uil-html5 icon"
             css="fab fa-css3-alt icon"
             js="fab fa-js-square icon"
