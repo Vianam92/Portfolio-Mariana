@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.2f547503.css",
-    "main.js": "./static/js/main.a1db17ac.js",
+    "main.css": "./static/css/main.a7de5e39.css",
+    "main.js": "./static/js/main.7a2f6e82.js",
+    "static/media/Anonimus-proxy.png": "./static/media/Anonimus-proxy.f41d525eea72a28852dd.png",
+    "static/media/hagman.png": "./static/media/hagman.21ba37570546a32228e7.png",
+    "static/media/mesh-gradient.png": "./static/media/mesh-gradient.dc5def1a62d27e7bf434.png",
+    "static/media/howart.png": "./static/media/howart.e7b0ae53659c5ae322b0.png",
+    "static/media/mi_octocal.png": "./static/media/mi_octocal.cc9801b355eeba89eeb3.png",
+    "static/media/search-anime.png": "./static/media/search-anime.53bab88eb390eab922c2.png",
+    "static/media/Spotify.png": "./static/media/Spotify.4ce3884fa00571582528.png",
+    "static/media/game_bingo.png": "./static/media/game_bingo.db3a53330e9756432004.png",
+    "static/media/collage_4Fantasticas.jpg": "./static/media/collage_4Fantasticas.77e517532176002ba070.jpg",
+    "static/media/juego-tu-peso.png": "./static/media/juego-tu-peso.dabb49a200f2b0faf345.png",
+    "static/media/juego-piedra-papel-tijeras.png": "./static/media/juego-piedra-papel-tijeras.a24def69a3d69ebfbad3.png",
+    "static/media/git.png": "./static/media/git.208d15533c060191b26f.png",
     "index.html": "./index.html",
-    "main.2f547503.css.map": "./static/css/main.2f547503.css.map",
-    "main.a1db17ac.js.map": "./static/js/main.a1db17ac.js.map"
+    "main.a7de5e39.css.map": "./static/css/main.a7de5e39.css.map",
+    "main.7a2f6e82.js.map": "./static/js/main.7a2f6e82.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f547503.css",
-    "static/js/main.a1db17ac.js"
+    "static/css/main.a7de5e39.css",
+    "static/js/main.7a2f6e82.js"
   ]
 }
