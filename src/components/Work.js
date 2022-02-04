@@ -7,6 +7,7 @@ import fantasticas from "../images/proyectos/collage_4Fantasticas.jpg";
 import animeSearch from "../images/proyectos/search-anime.png";
 import juegoPPT from "../images/proyectos/juego-piedra-papel-tijeras.png";
 import peso from "../images/proyectos/juego-tu-peso.png";
+import rick from "../images/proyectos/rick.jpg";
 import bingo from "../images/proyectos/game_bingo.png"
 import harry from "../images/proyectos/howart.png";
 import git from "../images/proyectos/git.png";
@@ -23,6 +24,21 @@ const Work = () => {
         </div>
         <article className="project__article">
         <SectionsWork
+            name="Buscador de Personajes de Rick y Morty"
+            image={rick}
+            alt="search-characters"
+            LinkGitHub="https://github.com/Vianam92/Buscador--personajes-Rick-and-Morty"
+            LinkPage="https://vianam92.github.io/Buscador--personajes-Rick-and-Morty/"
+            html="uil uil-html5 icon"
+            css="fab fa-css3-alt icon"
+            sass="fab fa-sass icon"
+            npm="fab fa-npm icon"
+            js="fab fa-js-square icon"
+            react="uil uil-react icon"
+            node="fab fa-node icon"
+            description="Consistió en desarrollar una página web con un listado de personajes de Rick and Morty, que podemos filtrar por el nombre del personaje,especie y status. Además si haces click en el personaje podrás conocer más sobre él."
+          />
+        <SectionsWork
             name="Buscador de Personajes de Harry Potter"
             image={harry}
             alt="search-characters"
@@ -35,7 +51,7 @@ const Work = () => {
             js="fab fa-js-square icon"
             react="uil uil-react icon"
             node="fab fa-node icon"
-            description="Consistio en desarrollar una página web con un listado de personajes de Harry Potter, que podemos filtrar por el nombre del personaje y por Casa. Además si haces click en el personaje podrás conocer más sobre él."
+            description="Consistió en desarrollar una página web con un listado de personajes de Harry Potter, que podemos filtrar por el nombre del personaje y por Casa. Además si haces click en el personaje podrás conocer más sobre él."
           />
           <SectionsWork
             name="Buscador de Series Anime"
@@ -48,7 +64,7 @@ const Work = () => {
             sass="fab fa-sass icon"
             npm="fab fa-npm icon"
             js="fab fa-js-square icon"
-            description="Buscador de Series Anime, se solicita la información de una Api, y el usuari@ puede interactuar marcando/desmarcando favoritas."
+            description="Buscador de Series Anime, se solicita la información de una Api, y el usuari@ puede interactuar marcando/desmarcando sus series favoritas."
           />
             <SectionsWork
             name="Hangman Game"
@@ -61,7 +77,7 @@ const Work = () => {
             js="fab fa-js-square icon"
             react="uil uil-react icon"
             node="fab fa-node icon"
-            description="Juego realizado durante el pairPrograming aplicando funcionalidades con React."
+            description="Juego realizado durante el pairPrograming aplicando funcionalidades con React. Adapte el proyecto a responsive."
           />
           <SectionsWork
             name="Bingo"
@@ -74,7 +90,7 @@ const Work = () => {
             sass="fab fa-sass icon"
             npm="fab fa-npm icon"
             js="fab fa-js-square icon"
-            description="Juego de Bingo realizado con Javascript."
+            description="Al pulsar el botón 'Saca una bolita' se genera y muestra un nuevo número aleatorio en la parte Bolitas. Si se pulsa una vez el botón de play ► se generará una bolita nueva cada un segundo. Cuando hayan aparecido todas las bolitas de los números de nuestro cartón se muestra el mensaje 'Han cantado bingo!!!' y se ocultan los botones de 'Saca una bolita' y Play."
           />
           <SectionsWork
             name="Juego-Piedra-Papel-Tijeras"
@@ -87,7 +103,7 @@ const Work = () => {
             sass="fab fa-sass icon"
             npm="fab fa-npm icon"
             js="fab fa-js-square icon"
-            description="Juego de niños Piedra Papel Tijera, "
+            description="En el juego ambos jugadores tienen que hacer una piedra, papel o tijeras. Solo tiene dos resultados posibles: un empate o una victoria para un jugador y una derrota para el otro jugador."
           />
           <SectionsWork
             name="Anonimus"

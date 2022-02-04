@@ -1,3 +1,5 @@
+@import "./Variables.scss";
+
 .nav-contact{
     display:flex;
     justify-content: center;
@@ -13,6 +15,9 @@
             font-size: 20px;
             padding:15px;
             color:white;
+            &:hover{
+                color: $color-blue;
+            }
             @media all and (min-width:768px){
                 font-size: 35px;
                }

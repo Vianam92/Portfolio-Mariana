@@ -5,14 +5,12 @@ const SectionsWork = (props) => {
       <div className="link-projects"> 
       <h4 className="project__section--title">{props.name}</h4>
      </div>
-     
       <img
         src={props.image}
         alt={props.alt}
         className="project__section--image"
       />
       <div className="link-projects">
-        
         <a
           href={props.LinkPage}
           className="link-projects__demo"
@@ -39,12 +37,12 @@ const SectionsWork = (props) => {
       <i className={props.npm} title="Npm"></i>
       <i className={props.js} title="javascript"></i>
       <i className={props.react}></i>
-      <i class={props.node} title="Node Js"></i>
-      <i class={props.database}></i>
-      <i class={props.git} title="Git"></i>
-      <i class={props.github} title="Github"></i>
-      <i class={props.slack} title="Slack"></i>
-      <i class={props.terminal} title="Terminal"></i>
+      <i className={props.node} title="Node Js"></i>
+      <i className={props.database}></i>
+      <i className={props.git} title="Git"></i>
+      <i className={props.github} title="Github"></i>
+      <i className={props.slack} title="Slack"></i>
+      <i className={props.terminal} title="Terminal"></i>
       </div>
       <p className="project__section--description">{props.description}</p>
     </section>

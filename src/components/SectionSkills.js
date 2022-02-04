@@ -1,5 +1,10 @@
 const SectionSkills = (props) => {
   return (
+    <>
+    <h4 className="article__text">
+        <i class="fas fa-angle-left"></i> Front-End /
+        <i class="fas fa-angle-right"></i>
+      </h4>
     <section className={props.className}>
       <span className="skills-item">
         <i className={props.html} title="html5"></i>
@@ -20,12 +25,6 @@ const SectionSkills = (props) => {
         <i className={props.react}></i>
       </span>
       <span className="skills-item">
-        <i class={props.node} title="Node Js"></i>
-      </span>
-      <span className="skills-item">
-        <i class={props.database}></i>
-      </span>
-      <span className="skills-item">
         <i class={props.git} title="Git"></i>
       </span>
       <span className="skills-item">
@@ -39,6 +38,19 @@ const SectionSkills = (props) => {
       </span>
       {/*Buscar Ubuntu */}
     </section>
+    <h4 className="article__text">
+        <i class="fas fa-angle-left"></i> Back-End /
+        <i class="fas fa-angle-right"></i>
+      </h4>
+    <section className={props.className}>
+    <span className="skills-item">
+        <i class={props.node} title="Node Js"></i>
+      </span>
+      <span className="skills-item">
+        <i class={props.database}></i>
+      </span>
+    </section>
+    </>
   );
 };
 
