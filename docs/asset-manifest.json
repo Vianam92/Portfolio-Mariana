@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.99cc70ea.css",
+    "main.css": "./static/css/main.0acf8452.css",
     "main.js": "./static/js/main.ed0ba724.js",
     "static/media/Anonimus-proxy.png": "./static/media/Anonimus-proxy.f41d525eea72a28852dd.png",
     "static/media/hagman.png": "./static/media/hagman.21ba37570546a32228e7.png",
@@ -16,11 +16,11 @@
     "static/media/juego-piedra-papel-tijeras.png": "./static/media/juego-piedra-papel-tijeras.a24def69a3d69ebfbad3.png",
     "static/media/git.png": "./static/media/git.208d15533c060191b26f.png",
     "index.html": "./index.html",
-    "main.99cc70ea.css.map": "./static/css/main.99cc70ea.css.map",
+    "main.0acf8452.css.map": "./static/css/main.0acf8452.css.map",
     "main.ed0ba724.js.map": "./static/js/main.ed0ba724.js.map"
   },
   "entrypoints": [
-    "static/css/main.99cc70ea.css",
+    "static/css/main.0acf8452.css",
     "static/js/main.ed0ba724.js"
   ]
 }
