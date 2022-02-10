@@ -1,4 +1,4 @@
-import "../styles/Links.scss";
+import "../../styles/Links.scss";
 
 const Links = () =>{
     return (

@@ -1,29 +1,32 @@
-import "../styles/Work.scss";
-import "../styles/Variables.scss";
+import "../../styles/Work.scss";
+import "../../styles/Variables.scss";
 //images
-import anonimus from "../images/proyectos/Anonimus-proxy.png";
-import spotify from "../images/proyectos/Spotify.png";
-import fantasticas from "../images/proyectos/collage_4Fantasticas.jpg";
-import animeSearch from "../images/proyectos/search-anime.png";
-import juegoPPT from "../images/proyectos/juego-piedra-papel-tijeras.png";
-import peso from "../images/proyectos/juego-tu-peso.png";
-import rick from "../images/proyectos/rick.jpg";
-import bingo from "../images/proyectos/game_bingo.png"
-import harry from "../images/proyectos/howart.png";
-import git from "../images/proyectos/git.png";
-import hagman from "../images/proyectos/hagman.png";
+import anonimus from "../../images/proyectos/Anonimus-proxy.png";
+import spotify from "../../images/proyectos/Spotify.png";
+import fantasticas from "../../images/proyectos/collage_4Fantasticas.jpg";
+import animeSearch from "../../images/proyectos/search-anime.png";
+import juegoPPT from "../../images/proyectos/juego-piedra-papel-tijeras.png";
+import peso from "../../images/proyectos/juego-tu-peso.png";
+import rick from "../../images/proyectos/rick.jpg";
+import bingo from "../../images/proyectos/game_bingo.png";
+import harry from "../../images/proyectos/howart.png";
+import git from "../../images/proyectos/git.png";
+import hagman from "../../images/proyectos/hagman.png";
+
 import SectionsWork from "./SectionsWork";
-import Scroll from "./Scroll";
+//import Scroll from "../../Scroll";
+import Button from "../utils/Button";
 
 const Work = () => {
   return (
     <>
-      <section className="project" id="projects">
+      <Button />
+      <section className="project">
         <div className="project__div">
           <h2 className="project__div--title">Mis Proyectos</h2>
         </div>
         <article className="project__article">
-        <SectionsWork
+          <SectionsWork
             name="Buscador de Personajes de Rick y Morty"
             image={rick}
             alt="search-characters"
@@ -38,7 +41,7 @@ const Work = () => {
             node="fab fa-node icon"
             description="Consistió en desarrollar una página web con un listado de personajes de Rick and Morty, que podemos filtrar por el nombre del personaje,especie y status. Además si haces click en el personaje podrás conocer más sobre él."
           />
-        <SectionsWork
+          <SectionsWork
             name="Buscador de Personajes de Harry Potter"
             image={harry}
             alt="search-characters"
@@ -66,7 +69,7 @@ const Work = () => {
             js="fab fa-js-square icon"
             description="Buscador de Series Anime, se solicita la información de una Api, y el usuari@ puede interactuar marcando/desmarcando sus series favoritas."
           />
-            <SectionsWork
+          <SectionsWork
             name="Hangman Game"
             image={hagman}
             alt="hagman"
@@ -161,7 +164,7 @@ const Work = () => {
             description="Nuestra aplicación consta de un campo donde escribir el nick de un usuaria de la plataforma de GitHub."
           />
         </article>
-        <Scroll/>
+        {/*<Scroll/>*/}
       </section>
     </>
   );

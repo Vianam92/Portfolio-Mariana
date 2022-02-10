@@ -1,6 +1,6 @@
 import "../styles/Scroll.scss";
 
-const Scroll = (props) =>{
+const Scroll = () =>{
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

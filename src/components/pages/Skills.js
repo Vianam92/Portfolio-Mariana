@@ -1,9 +1,11 @@
-import SectionSkills from "./SectionSkills";
-import "../styles/Skills.scss";
+import SectionSkills from "../SectionSkills";
+import "../../styles/Skills.scss";
+import Button from "../utils/Button";
 
 const Skills = () => {
   return (
-    <article className="article" id="herramientas">
+    <article className="article">
+      <Button/>
       <h2 className="article__herramientas">Tecnologías</h2>
       <SectionSkills
         className="skills"

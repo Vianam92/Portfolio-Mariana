@@ -1,14 +1,16 @@
 @import "../styles/Variables.scss";
 
 .project {
-  margin: 100px 15px 50px 15px;
+  margin: 0 15px 50px 15px;
+  padding:20px;
   display: flex;
   align-items: center;
   flex-direction: column;
-
   //border:solid 2px $color-blue;
-  //box-shadow: 3px 5px 20px rgba(0,0,0,.5);
-  //background-color: rgba(118, 174, 241, 1);
+  box-shadow: 3px 5px 20px rgba(0,0,0,.5);
+  background-color: rgba(118, 174, 241, 1);
+  height: 90vh;
+  overflow-y: auto;
   @media all and (min-width: 768px) {
     display: flex;
     flex-direction: row;

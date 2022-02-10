@@ -1,39 +1,46 @@
+import { Switch, Route } from "react-router-dom";
+//Styles
 import "../styles/App.scss";
 import "../styles/Reset.scss";
-import Header from "./Header";
+
+//Componentes
 import Hero from "./Hero";
-import AboutMe from "./AboutMe";
-import Work from "./Work";
-import Footer from "./Footer";
-import { Switch, Route } from "react-router-dom";
-import Skills from "./Skills";
-import {useState} from 'react';
-//import dataWork from '../services/work.json';
-//import Menu from "./Menu";
+import Header from "./pages/Header";
+import Menu from "./utils/Menu";
+import AboutMe from "./pages/AboutMe";
+import Work from "./projects/Work";
+import Footer from "./pages/Footer";
+import Skills from "./pages/Skills";
+import { useEffect, useState } from "react";
 
 function App() {
-  //const [work, setWork] = useState(dataWork);
+  const [darkmode, setDarkMode] = useState(false);
 
-return (
+  const handleDarkMode = () => {
+    setDarkMode(!darkmode);
+  };
+
+  const isdarkMode = () => (darkmode ? "white" : "black");
+  /*const isRoter = () => {
+    if (location !== "/menu") {
+      const link = location.replace("/menu", "");
+      setActiveLink("navbar." + link);
+    }
+  };*/
+
+  return (
     <>
-      <Header/>
+      <Header handleDarkMode={handleDarkMode} isdarkMode={isdarkMode} />
+      <Route path="/landing" exact>
+        <Hero isdarkMode={isdarkMode} />
+      </Route>
       <Switch>
-          <Route path="/about-me" exact>
-            <AboutMe />
-            <Skills/>
-            <Footer/>
-      
-          </Route>
-          <Route path="/projects" exact>
-            <Work/>
-            <Footer/>
-    
-          </Route>
-          <Route path="/" exact>
-            <Hero />
-     
-          </Route>
-        </Switch>
+        <Route path="/menu"><Menu isdarkMode={isdarkMode}/></Route>
+        <Route path="/about-me" component={AboutMe} isdarkMode={isdarkMode} />
+        <Route path="/skills" component={Skills} isdarkMode={isdarkMode} />
+        <Route path="/projects" component={Work} isdarkMode={isdarkMode} />
+        <Route path="/contacts" component={Footer} isdarkMode={isdarkMode} />
+      </Switch>
     </>
   );
 }

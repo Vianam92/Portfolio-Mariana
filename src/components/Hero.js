@@ -1,20 +1,24 @@
 import octocal from "../images/hero/mi_octocal.png";
+//Styles
 import "../styles/Hero.scss";
 import "../styles/Variables.scss";
-import Particles from "react-tsparticles";
-import particlesOptions from "../particles.json";
-import Links from "./Links";
+import { Link } from "react-router-dom";
+//import Particles from "react-tsparticles";
+//import particlesOptions from "../particles.json";
+import Links from "./utils/Links";
 
-const Hero = () => {
+const Hero = ({isdarkMode}) => {
+  
   return (
     <>
-      <section className="hero">
-        <div> <Particles options={particlesOptions}/></div>
-        <img className="hero__img" src={octocal} alt="octocal" />
-        <div className="hero__Iam">
-          <h1 className="hero__Iam--title">Hola 👋🏻️</h1> 
-          <h2 className="hero__Iam--title">Mi nombre es Mariana</h2>
-          <h3 className="hero__Iam--text">Front-End Developer</h3>
+      <section className={"hero-" + isdarkMode()}>
+        {/*<div> <Particles options={particlesOptions}/></div>*/}
+        <img className={`hero-${isdarkMode()}__img`} src={octocal} alt="octocal" />
+        <div className={`hero-${isdarkMode()}__Iam`}>
+          <h1 className={`hero-${isdarkMode()}__Iam--title`}>Hola 👋🏻️</h1> 
+          <h2 className={`hero-${isdarkMode()}__Iam--title`}>Mi nombre es Mariana</h2>
+          <h3 className={`hero-${isdarkMode()}__Iam--text`}>Front-End Developer</h3>
+          <Link to="/menu" className={`hero-${isdarkMode()}__Iam--start`}>Comenzar</Link>
         </div>
         <Links/>
       </section>

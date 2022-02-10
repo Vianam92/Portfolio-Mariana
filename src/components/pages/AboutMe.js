@@ -1,11 +1,13 @@
-import "../styles/AboutMe.scss";
-import "../styles/Variables.scss";
+import "../../styles/AboutMe.scss";
+import "../../styles/Variables.scss";
+import Button from "../utils/Button";
 
 const AboutMe = () => {
   return (
-    <article className="aboutMe" id="aboutMe">
+    <>
+    <Button/>
+    <article className="aboutMe" id="about-me">
       <h2 className="aboutMe__h2">Sobre mí </h2>
-      
       <figure className="aboutMe__images">
         {/*<img src={photo} className="aboutMe__images--photo" alt="photoMariana"/>*/}
       </figure>
@@ -29,6 +31,7 @@ const AboutMe = () => {
         equipo y estoy orgullosa de pertenecer a él.
       </p>
     </article>
+    </>
   );
 };
 

@@ -1,9 +1,12 @@
-import '../styles/Footer.scss';
-import '../styles/Variables.scss';
-import Links from './Links';
+import '../../styles/Footer.scss';
+import '../../styles/Variables.scss';
+import Links from '../utils/Links';
+import Button from "../utils/Button";
+
 const Footer = () => {
   return (
-    <footer className="footer" id="footer">
+    <footer className="footer">
+      <Button/>
       <h5 className="footer__feadback">
         Si quereís contactar conmigo ya sea para darme feadback sobre mis
         proyectos o si creeis que aportare valor a su equipo, que asi será,
