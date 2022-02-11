@@ -1,7 +1,7 @@
 const SectionSkills = (props) => {
   return (
     <>
-    <h4 className="article__text">
+    <h4 className={`article-${props.isdarkMode()}__text`}>
         <i className="fas fa-angle-left"></i> Front-End /
         <i className="fas fa-angle-right"></i>
       </h4>
@@ -38,7 +38,7 @@ const SectionSkills = (props) => {
       </span>
       {/*Buscar Ubuntu */}
     </section>
-    <h4 className="article__text">
+    <h4 className={`article-${props.isdarkMode()}__text`}>
         <i className="fas fa-angle-left"></i> Back-End /
         <i className="fas fa-angle-right"></i>
       </h4>

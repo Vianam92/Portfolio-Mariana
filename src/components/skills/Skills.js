@@ -1,12 +1,10 @@
-import SectionSkills from "../SectionSkills";
+import SectionSkills from "./SectionSkills";
 import "../../styles/Skills.scss";
-import Button from "../utils/Button";
 
-const Skills = () => {
+const Skills = ({isdarkMode}) => {
   return (
-    <article className="article">
-      <Button/>
-      <h2 className="article__herramientas">Tecnologías</h2>
+    <article className={`article-${isdarkMode()}`}>
+      <h2 className={`article-${isdarkMode()}__tecnologias`}>Tecnologías</h2>
       <SectionSkills
         className="skills"
         html="uil uil-html5 icon"
@@ -21,6 +19,7 @@ const Skills = () => {
         terminal="fas fa-terminal icon"
         node="fab fa-node icon"
         database="uil uil-database icon"
+        isdarkMode={isdarkMode}
       />
     </article>
   );

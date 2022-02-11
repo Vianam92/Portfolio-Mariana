@@ -14,19 +14,16 @@ import git from "../../images/proyectos/git.png";
 import hagman from "../../images/proyectos/hagman.png";
 
 import SectionsWork from "./SectionsWork";
-//import Scroll from "../../Scroll";
-import Button from "../utils/Button";
 
-const Work = () => {
+const Work = ({isdarkMode}) => {
   return (
     <>
-      <Button />
-      <section className="project">
-        <div className="project__div">
-          <h2 className="project__div--title">Mis Proyectos</h2>
+      <section className={`project-${isdarkMode()}`}>
+        <div className={`project-${isdarkMode()}__div`}>
+          <h2 className={`project-${isdarkMode()}__div--title`}>Mis Proyectos</h2>
         </div>
-        <article className="project__article">
-          <SectionsWork
+        <article className={`project-${isdarkMode()}__article`}>
+          <SectionsWork 
             name="Buscador de Personajes de Rick y Morty"
             image={rick}
             alt="search-characters"
@@ -40,6 +37,7 @@ const Work = () => {
             react="uil uil-react icon"
             node="fab fa-node icon"
             description="Consistió en desarrollar una página web con un listado de personajes de Rick and Morty, que podemos filtrar por el nombre del personaje,especie y status. Además si haces click en el personaje podrás conocer más sobre él."
+            isdarkMode={isdarkMode}
           />
           <SectionsWork
             name="Buscador de Personajes de Harry Potter"
@@ -55,6 +53,7 @@ const Work = () => {
             react="uil uil-react icon"
             node="fab fa-node icon"
             description="Consistió en desarrollar una página web con un listado de personajes de Harry Potter, que podemos filtrar por el nombre del personaje y por Casa. Además si haces click en el personaje podrás conocer más sobre él."
+            isdarkMode={isdarkMode}
           />
           <SectionsWork
             name="Buscador de Series Anime"
@@ -68,6 +67,7 @@ const Work = () => {
             npm="fab fa-npm icon"
             js="fab fa-js-square icon"
             description="Buscador de Series Anime, se solicita la información de una Api, y el usuari@ puede interactuar marcando/desmarcando sus series favoritas."
+            isdarkMode={isdarkMode}
           />
           <SectionsWork
             name="Hangman Game"
@@ -81,6 +81,7 @@ const Work = () => {
             react="uil uil-react icon"
             node="fab fa-node icon"
             description="Juego realizado durante el pairPrograming aplicando funcionalidades con React. Adapte el proyecto a responsive."
+            isdarkMode={isdarkMode}
           />
           <SectionsWork
             name="Bingo"
@@ -94,6 +95,7 @@ const Work = () => {
             npm="fab fa-npm icon"
             js="fab fa-js-square icon"
             description="Al pulsar el botón 'Saca una bolita' se genera y muestra un nuevo número aleatorio en la parte Bolitas. Si se pulsa una vez el botón de play ► se generará una bolita nueva cada un segundo. Cuando hayan aparecido todas las bolitas de los números de nuestro cartón se muestra el mensaje 'Han cantado bingo!!!' y se ocultan los botones de 'Saca una bolita' y Play."
+            isdarkMode={isdarkMode}
           />
           <SectionsWork
             name="Juego-Piedra-Papel-Tijeras"
@@ -107,6 +109,7 @@ const Work = () => {
             npm="fab fa-npm icon"
             js="fab fa-js-square icon"
             description="En el juego ambos jugadores tienen que hacer una piedra, papel o tijeras. Solo tiene dos resultados posibles: un empate o una victoria para un jugador y una derrota para el otro jugador."
+            isdarkMode={isdarkMode}
           />
           <SectionsWork
             name="Anonimus"
@@ -118,6 +121,7 @@ const Work = () => {
             css="fab fa-css3-alt icon"
             sass="fab fa-sass icon"
             description="Página web donde realice la maquetación desde 0."
+            isdarkMode={isdarkMode}
           />
           <SectionsWork
             name="Página Spotify"
@@ -129,6 +133,7 @@ const Work = () => {
             css="fab fa-css3-alt icon"
             sass="fab fa-sass icon"
             description="Maquetación de la página web de spotify"
+            isdarkMode={isdarkMode}
           />
           <SectionsWork
             name="Proyecto de Equipo"
@@ -140,6 +145,7 @@ const Work = () => {
             css="fab fa-css3-alt icon"
             sass="fab fa-sass icon"
             description="Proyecto de Equipo que consistio en realizar una página web desde 0 para darnos a conocer como programadoras."
+            isdarkMode={isdarkMode}
           />
           <SectionsWork
             name="Tu peso en Marte/Júpiter"
@@ -151,6 +157,7 @@ const Work = () => {
             css="fab fa-css3-alt icon"
             js="fab fa-js-square icon"
             description="Si tienes curiosidad cuanto pesas en marte o en jupiter esta es tu oportunidad de averiguarlo."
+            isdarkMode={isdarkMode}
           />
           <SectionsWork
             name="Get Token from GitHub"
@@ -162,6 +169,7 @@ const Work = () => {
             css="fab fa-css3-alt icon"
             js="fab fa-js-square icon"
             description="Nuestra aplicación consta de un campo donde escribir el nick de un usuaria de la plataforma de GitHub."
+            isdarkMode={isdarkMode}
           />
         </article>
         {/*<Scroll/>*/}

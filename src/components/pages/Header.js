@@ -1,9 +1,5 @@
 import "../../styles/Header.scss";
 import ChangeColor from "../utils/otros/ChangeColor";
-//import Button from "../utils/Button";
-//import PropTypes from 'prop-types';
-
-//import iconMenu from "../images/menu.png";
 
 const Header = ({handleDarkMode , isdarkMode}) => {
   return (

@@ -3,7 +3,7 @@ import "../../styles/Menu.scss";
 
 const Menu = ({isdarkMode}) => {
   const navLinks = [
-    { text: "Inicio" , link:"/landing" },
+    { text: "Inicio" , link:"/" },
     { text: "Sobre Mí" , link:"/about-me"},
     { text: "Proyectos" , link:"/projects"},
     { text: "Herramientas" , link:"/skills"},
@@ -15,7 +15,7 @@ const Menu = ({isdarkMode}) => {
       {navLinks.map((link) => {
         return (
           <li className={`menu-${isdarkMode()}__nav--list`} key={link.text}>
-            <Link to={link.link} className="link">
+            <Link to={link.link} className={"link-"+ isdarkMode()}>
               {link.text}
             </Link>
           </li>

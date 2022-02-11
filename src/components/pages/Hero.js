@@ -1,11 +1,11 @@
-import octocal from "../images/hero/mi_octocal.png";
+import octocal from "../../images/hero/mi_octocal.png";
 //Styles
-import "../styles/Hero.scss";
-import "../styles/Variables.scss";
+import "../../styles/Hero.scss";
+import "../../styles/Variables.scss";
 import { Link } from "react-router-dom";
 //import Particles from "react-tsparticles";
 //import particlesOptions from "../particles.json";
-import Links from "./utils/Links";
+import Links from "../utils/Links";
 
 const Hero = ({isdarkMode}) => {
   
@@ -20,7 +20,7 @@ const Hero = ({isdarkMode}) => {
           <h3 className={`hero-${isdarkMode()}__Iam--text`}>Front-End Developer</h3>
           <Link to="/menu" className={`hero-${isdarkMode()}__Iam--start`}>Comenzar</Link>
         </div>
-        <Links/>
+        <Links isdarkMode={isdarkMode}/>
       </section>
     </>
   );

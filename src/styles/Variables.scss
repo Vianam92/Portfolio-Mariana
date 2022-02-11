@@ -2,11 +2,13 @@ $font-family: "Playfair Display", serif;
 $font-roboto: "Roboto Slab", serif;
 $font-rubik: "Rubik", sans-serif;
 $color-blue: #054752;
+$color-back: rgba(24, 170, 207, 0.514);
+$color-black:#1d1d1d;
+$color-title-black:rgb(77, 218, 228);
 
 @mixin title-h2 {
   font-size: 1.5rem;
   margin: 10px 10px;
-  color: $color-blue;
   width: 100%;
   text-align: center;
   font-family: "Balsamiq Sans", cursive;
@@ -22,7 +24,6 @@ $color-blue: #054752;
   @media all and (min-width: 1200px) {
     font-size: 2.5rem;
   }
-
   &:hover {
     color: rgb(24, 171, 207);
   }

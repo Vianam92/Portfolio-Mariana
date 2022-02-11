@@ -1,14 +1,14 @@
 @import "../styles/Variables.scss";
 
-.project {
-  margin: 0 15px 50px 15px;
+.project-black{
+  //margin: 0 15px 50px 15px;
   padding:20px;
   display: flex;
   align-items: center;
   flex-direction: column;
   //border:solid 2px $color-blue;
   box-shadow: 3px 5px 20px rgba(0,0,0,.5);
-  background-color: rgba(118, 174, 241, 1);
+  background-color: $color-black;
   height: 90vh;
   overflow-y: auto;
   @media all and (min-width: 768px) {
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(255, 255, 255, 0.384);
+    background: $color-black;
     width: 100%;
 
     @media all and(min-width:768px) {
@@ -41,6 +41,7 @@
 
     &--title {
       @include title-h2;
+      color:$color-title-black;
     }
   }
 
@@ -51,6 +52,7 @@
     align-items: center;
     margin-bottom: 20px;
     background-color: white;
+    box-shadow: 3px 5px 5px rgba(122, 218, 224, 0.356);
     height: auto;
     &:hover{
       border: solid 5px rgb(4, 70, 75);
@@ -70,7 +72,7 @@
     &--title {
       font-size: 1rem;
       font-family: "Luxurious Roman", cursive;
-      color: $color-blue;
+      color: rgb(8, 91, 97);
       padding: 5px;
       width: 100%;
       @media all and (min-width: 768px) {
@@ -123,4 +125,110 @@
 
 .img {
   width: 30px;
+}
+
+.project-white{
+  padding:10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 3px 5px 20px rgba(0,0,0,.5);
+  background-color: $color-back;
+  height: 90vh;
+  overflow-y: auto;
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $color-black;
+    width: 100%;
+
+    @media all and(min-width:768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+
+  &__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    &--title {
+      @include title-h2;
+      color:$color-blue;
+    }
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px $color-blue;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 3px 5px 5px rgba(122, 218, 224, 0.356);
+    height: auto;
+    &:hover{
+      border: solid 5px rgb(4, 70, 75);
+    }
+
+    @media all and (min-width: 768px) {
+      width: 570px;
+      height: 570px;
+      margin: 10px;
+      box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.5);
+    }
+    @media all and (min-width: 1200px) {
+      width: 400px;
+      height: 530px;
+    }
+
+    &--title {
+      font-size: 1rem;
+      font-family: "Luxurious Roman", cursive;
+      color: rgb(8, 91, 97);
+      padding: 5px;
+      width: 100%;
+      @media all and (min-width: 768px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    &--image {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    &--tecnolog {
+      margin: 10px;
+      border-top: solid 2px $color-blue;
+      box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.5);
+      color: rgb(8, 91, 97);
+      font-size: 20px;
+
+      @media all and(min-width:1200px) {
+        font-size: 30px;
+      }
+    }
+
+    &--description {
+      font-family: "Luxurious Roman", cursive;
+      color: $color-blue;
+      margin: 5px 10px;
+      text-align:center;
+    }
+  }
 }

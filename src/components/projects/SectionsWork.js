@@ -1,14 +1,14 @@
 
 const SectionsWork = (props) => {
   return (
-    <section className="project__section" >
+    <section className={`project-${props.isdarkMode()}__section`} >
       <div className="link-projects"> 
-      <h4 className="project__section--title">{props.name}</h4>
+      <h4 className={`project-${props.isdarkMode()}__section--title`}>{props.name}</h4>
      </div>
       <img
         src={props.image}
         alt={props.alt}
-        className="project__section--image"
+        className={`project-${props.isdarkMode()}__section--image`}
       />
       <div className="link-projects">
         <a
@@ -30,7 +30,7 @@ const SectionsWork = (props) => {
           <i className="fab fa-github-alt icon"></i>
         </a>
       </div>
-      <div className="project__section--tecnolog">
+      <div className={`project-${props.isdarkMode()}__section--tecnolog`}>
       <i className={props.html} title="html5"></i>
       <i className={props.css} title="css3"></i>
       <i className={props.sass} title="sass"></i>
@@ -44,7 +44,7 @@ const SectionsWork = (props) => {
       <i className={props.slack} title="Slack"></i>
       <i className={props.terminal} title="Terminal"></i>
       </div>
-      <p className="project__section--description">{props.description}</p>
+      <p className={`project-${props.isdarkMode()}__section--description`}>{props.description}</p>
     </section>
   );
 };

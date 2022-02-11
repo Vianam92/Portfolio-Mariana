@@ -1,16 +1,31 @@
 @import "./Variables.scss";
 
-.div-button{
+.div-button-black{
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
+    //padding: 20px;
+    background-color: $color-black;
+    &__menu{
+        color:$color-back;
+        font-size: 1.1rem;
+        width: 60px;
+        text-align: center;
+        //box-shadow: 5px 5px 2px rgba(53, 200, 219, 0.432);
+    }
+};
+
+.div-button-white{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
     &__menu{
         color:$color-blue;
         font-size: 1.1rem;
         width: 60px;
         text-align: center;
-        box-shadow: 10px 3px 10px rgb(8, 67, 75);
+        box-shadow: 5px 5px 2px rgba(53, 200, 219, 0.432);
         background-color: rgb(58, 200, 219);
     }
 }
