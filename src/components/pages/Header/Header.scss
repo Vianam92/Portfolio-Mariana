@@ -1,0 +1,46 @@
+@import "../../../styles/Variables.scss";
+
+.header-black{
+  width: 100%;
+  height: 10vh;
+  background-color: #1d1d1d;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  color:$color-title-black;
+  &__div{
+    background-color: rgb(12, 94, 94);
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    padding: 1px;
+    border-radius: 30px;
+    &--change{
+      border-radius: 50%;
+    }
+  };
+}
+.header-white{
+  width: 100%;
+  background-color: rgba(24, 170, 207, 0.514);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  color:$color-blue;
+  &__div{
+    background-color: #0212146b;
+    width: 40px;
+    border-radius: 30px;
+    height: 20px;
+    line-height: 17px;
+    padding: 2px;
+    text-align: right;
+    &--change{
+      border-radius: 50%;
+    }
+  }
+}
+
+.div{
+  background-color: #1d1d1d;
+}

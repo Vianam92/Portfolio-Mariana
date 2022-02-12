@@ -1,9 +1,25 @@
 {
   "aboutMe":{
     "title":"Sobre Mí",
-    "text-1":"Antes contable, ahora programadora Front-End Jr. Nacida en Cuba pero de descendientes gallegos, 4 generaciones después regreso a la tierra de mis bisabuelos",
-    "text-2":"Como buena cubana que soy, me encanta la música y el baile, disfruto de la buena comida, los paseos por la naturaleza y el deporte.",
-    "text-3":"Y ya que estoy en un nuevo país, ¿qué mejor que reinventarme? Tras completar varios cursos y estudiar por mi cuenta decidí dar el paso y aplicar a Adalab. Lo que más me gusta de la programación es que no hay límites para seguir aprendiendo y creciendo.",
-    "text-4":"Además, la comunidad tech es un sector colaborativo y de trabajo en equipo y estoy orgullosa de pertenecer a él."
-  }
+    "text1":"Antes contable, ahora programadora Front-End Jr. Nacida en Cuba pero de descendientes gallegos, 4 generaciones después regreso a la tierra de mis bisabuelos",
+    "text2":"Como buena cubana que soy, me encanta la música y el baile, disfruto de la buena comida, los paseos por la naturaleza y el deporte.",
+    "text3":"Y ya que estoy en un nuevo país, ¿qué mejor que reinventarme? Tras completar varios cursos y estudiar por mi cuenta decidí dar el paso y aplicar a Adalab. Lo que más me gusta de la programación es que no hay límites para seguir aprendiendo y creciendo.",
+    "text4":"Además, la comunidad tech es un sector colaborativo y de trabajo en equipo y estoy orgullosa de pertenecer a él."
+  },
+  "Hero":{
+   "title":"Bienvenido a mi Portafolio",
+   "I":"Mi nombre es Mariana",
+   "am":"y soy Front-End Developer",
+   "btn":"Conoceme"
+  },
+  "Menu":{
+    "home":"Inicio",
+    "aboutMe":"Sobre Mí",
+    "projects":"Proyectos",
+    "skills":"Herramientas",
+    "contacts":"Contacto"
+   },
+   "contacto":{
+     "message":"If you want to get in touch with me, talk about a collaboration project or just say hello, fill out the form below or send an email to my email link and let's talk."
+   }
 }

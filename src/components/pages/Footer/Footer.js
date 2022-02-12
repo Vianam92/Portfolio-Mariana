@@ -1,7 +1,6 @@
-import '../../styles/Footer.scss';
-import '../../styles/Variables.scss';
-import Links from '../utils/Links';
-import Form from "../utils/Form";
+import './Footer.scss';
+import Links from '../../utils/Links';
+import Form from "../../utils/Form";
 
 const Footer = ({handleSubmit,input,isdarkMode}) => {
 

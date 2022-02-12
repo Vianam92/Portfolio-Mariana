@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import "../../styles/Menu.scss";
+import octocal from "../../images/hero/mi_octocal.png";
+import "./Menu.scss";
 
 const Menu = ({isdarkMode}) => {
   const navLinks = [
@@ -11,6 +12,7 @@ const Menu = ({isdarkMode}) => {
   ];
   return (
     <nav className={`menu-${isdarkMode()}`}>
+    <img className={`menu-${isdarkMode()}__img`} src={octocal} alt="octocal" />
     <ul className={`menu-${isdarkMode()}__nav`}>
       {navLinks.map((link) => {
         return (

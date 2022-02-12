@@ -1,5 +1,5 @@
-import "../../styles/Work.scss";
-import "../../styles/Variables.scss";
+import "./Work.scss";
+
 //images
 import anonimus from "../../images/proyectos/Anonimus-proxy.png";
 import spotify from "../../images/proyectos/Spotify.png";

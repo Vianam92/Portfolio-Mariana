@@ -1,4 +1,4 @@
-import "../../styles/Links.scss";
+import "./Links.scss";
 
 const Links = ({isdarkMode}) =>{
     return (

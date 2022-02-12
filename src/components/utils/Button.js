@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../../styles/Button.scss"
+import "./Button.scss"
 
 const Button = ({isdarkMode}) => {
   return (

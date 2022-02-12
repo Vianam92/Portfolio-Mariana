@@ -1,6 +1,9 @@
-$font-family: "Playfair Display", serif;
-$font-roboto: "Roboto Slab", serif;
-$font-rubik: "Rubik", sans-serif;
+$font-family: "Playfair Display",
+serif;
+$font-roboto: "Roboto Slab",
+serif;
+$font-rubik: "Rubik",
+sans-serif;
 $color-blue: #054752;
 $color-back: rgba(24, 170, 207, 0.514);
 $color-black:#1d1d1d;
@@ -15,7 +18,7 @@ $color-title-black:rgb(77, 218, 228);
   text-transform: capitalize;
   white-space: nowrap;
   overflow: hidden;
-  animation: type 4s steps(60, end); 
+  animation: type 4s steps(60, end);
 
   @media all and (min-width: 768px) {
     font-size: 2rem;
@@ -24,21 +27,23 @@ $color-title-black:rgb(77, 218, 228);
   @media all and (min-width: 1200px) {
     font-size: 2.5rem;
   }
+
   &:hover {
     color: rgb(24, 171, 207);
   }
 }
 
-@mixin icon(){
+@mixin icon() {
   width: 50px;
   height: 50px;
   font-size: 20px;
   color: #054752;
   margin: 10px;
   padding: 10px;
-  &:hover{
+
+  &:hover {
     font-size: 1.3rem;
-    color:rgb(14, 133, 97);
+    color: rgb(14, 133, 97);
   }
 }
 
@@ -66,11 +71,9 @@ $color-title-black:rgb(77, 218, 228);
   padding: 0;
   border: none;
   background: rgb(79, 189, 216);
-  background: linear-gradient(
-    0deg,
-    rgb(236, 210, 208) 0%,
-    rgb(91, 240, 220) 100%
-  );
+  background: linear-gradient(0deg,
+      rgb(236, 210, 208) 0%,
+      rgb(91, 240, 220) 100%);
 
   &:hover {
     color: #0000007a;
@@ -106,4 +109,33 @@ $color-title-black:rgb(77, 218, 228);
   }
 }
 
-@keyframes typing { from { width: 0; } }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@mixin btn() {
+  background: rgb(247,150,192);
+  background:  radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
+  border: none;
+  height: 30px;
+  width: 150px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+
+
+  &:before {
+    height: 0%;
+    width: 2px;
+  }
+
+  &:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+      -4px -4px 6px 0 rgba(116, 125, 136, .5),
+      inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
+}

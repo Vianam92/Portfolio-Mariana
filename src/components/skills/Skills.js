@@ -1,5 +1,5 @@
 import SectionSkills from "./SectionSkills";
-import "../../styles/Skills.scss";
+import "./Skills.scss";
 
 const Skills = ({isdarkMode}) => {
   return (
