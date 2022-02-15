@@ -10,18 +10,31 @@
   height: 100vh;
   &__contact{
     margin:50px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &--text{
-      color:$color-title-black
+      color:$color-title-black;
+      font-family: monospace;
+      max-width: 80%;
+      margin-bottom: 35px;
+      text-align: center;
+      @media all and(min-width:750px){
+        font-size: 1.3rem;
+        max-width: 65%;
+      }
     }
   }
   &__made {
     position: fixed;
     bottom: 0;
+    z-index: 1;
     text-align: center;
     margin: 15px;
     padding: 10px;
     width: 100%;
     border-top: white solid 2px;
+    color:$color-title-black;
     @media all and (min-width: 768px) {
       font-size: 1.2rem;
     }
@@ -35,26 +48,63 @@
   }
 };
 
+.icon{
+  font-size: 1.1rem;
+  @media all and(min-width:768px){
+    font-size: 1.5rem;
+  }
+}
+
 .form-black{
 display: flex;
 flex-wrap: wrap;
-padding:20px;
+//max-width: 350px;
+justify-content: flex-start;
+align-items: center;
 &__input{
-  width: 250px;
+  width: 85%;
   border: none;
   border-bottom:solid 3px $color-title-black;
   padding:5px;
   margin:3px;
+  padding: 10px;
   background-color: rgba(0, 0, 0, 0.103);
+  @media all and(min-width:750px){
+    font-size: 1.2rem;
+  }
+  @media all and(min-width:1200px){
+    font-size: 1.3rem;
+    width: 50%;
+  };
 }
 &__textarea{
   width: 100%;
   margin-top:50px;
+  @media all and(min-width:1200px){
+    font-size: 1.3rem;
+  };
 }
 &__btn{
   margin:20px;
   width: 100px;
   height: 30px;
+  background-color: $color-title-black;
+  color:$color-blue;
+  text-transform: uppercase;
+  font-family: monospace;
+  &:hover{
+  font-size: 1.2rem;
+  }
+  @media all and(min-width:750px){
+    width: 150px;
+    font-size: 1.2rem;
+    height: 35px;
+  }
+  @media all and(min-width:1200px){
+    font-size: 1.3rem;
+    width: 200px;
+    height: 40px;
+  };
 }
 }
 
@@ -80,13 +130,25 @@ padding:20px;
   height: 100vh;
   &__contact{
     margin:50px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &--text{
       color:$color-blue;
+      font-family: monospace;
+      max-width: 80%;
+      margin-bottom: 35px;
+      text-align: center;
+      @media all and(min-width:750px){
+        font-size: 1.3rem;
+        max-width: 65%;
+      }
     }
   }
   &__made {
     position: fixed;
     bottom: 0;
+    z-index: 1;
     text-align: center;
     margin: 15px;
     padding: 10px;
@@ -105,26 +167,59 @@ padding:20px;
     }
   }
 };
-
 .form-white{
-display: flex;
-flex-wrap: wrap;
-padding:20px;
-&__input{
-  width: 250px;
-  border: none;
-  border-bottom:solid 3px $color-blue;
-  padding:5px;
-  margin:3px;
-  background-color: rgba(0, 0, 0, 0.103);
-}
-&__textarea{
-  width: 100%;
-  margin-top:50px;
-}
-&__btn{
-  margin:20px;
-  width: 100px;
-  height: 30px;
-}
-}
+  display: flex;
+  flex-wrap: wrap;
+  //max-width: 350px;
+  justify-content: center;
+  align-items: center;
+  &__input{
+    width: 250px;
+    border: none;
+    border-bottom:solid 3px $color-blue;
+    padding:5px;
+    margin:3px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.103);
+    @media all and(min-width:750px){
+      font-size: 1.2rem;
+      width: 75%;
+    }
+    @media all and(min-width:1200px){
+      font-size: 1.3rem;
+      width: 50%;
+    };
+  }
+  &__textarea{
+    width: 100%;
+    margin-top:50px;
+    border:2px solid $color-blue;
+    @media all and(min-width:1200px){
+      font-size: 1.3rem;
+    };
+  }
+  &__btn{
+    margin:20px;
+    width: 100px;
+    height: 30px;
+    background-color: $color-title-black;
+    color:$color-blue;
+    text-transform: uppercase;
+    font-family: monospace;
+    border: none;
+    box-shadow: 5px 5px 5px $color-blue;
+    &:hover{
+    font-size: 1.2rem;
+    }
+    @media all and(min-width:750px){
+      width: 150px;
+      font-size: 1.2rem;
+      height: 35px;
+    }
+    @media all and(min-width:1200px){
+      font-size: 1.3rem;
+      width: 200px;
+      height: 40px;
+    };
+  }
+  }

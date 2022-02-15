@@ -8,6 +8,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "eslint-plugin-react-hooks": "^4.2.1-rc.0-next-a3bde7974-20220208",
+    "framer-motion": "^6.2.6",
     "node-sass": "^7.0.1",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",

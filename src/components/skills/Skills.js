@@ -1,26 +1,45 @@
 import SectionSkills from "./SectionSkills";
 import "./Skills.scss";
+import { motion } from "framer-motion";
 
-const Skills = ({isdarkMode}) => {
+const Skills = ({
+  isdarkMode,
+  translate,
+  pageStyle,
+  pageVariants,
+  pageTransition,
+}) => {
   return (
     <article className={`article-${isdarkMode()}`}>
-      <h2 className={`article-${isdarkMode()}__tecnologias`}>Tecnologías</h2>
-      <SectionSkills
-        className="skills"
-        html="uil uil-html5 icon"
-        css="fab fa-css3-alt icon"
-        sass="fab fa-sass icon"
-        npm="fab fa-npm icon"
-        js="fab fa-js-square icon"
-        react="uil uil-react icon"
-        git="fab fa-git icon"
-        github="fab fa-github icon"
-        slack="fab fa-slack icon"
-        terminal="fas fa-terminal icon"
-        node="fab fa-node icon"
-        database="uil uil-database icon"
-        isdarkMode={isdarkMode}
-      />
+      <h2 className={`article-${isdarkMode()}__tecnologias`}>
+        {translate ? "Technologies" : "Tecnologías"}
+      </h2>
+      <motion.div
+        style={pageStyle}
+        initial="initial"
+        animate="in"
+        exit="out"
+        variants={pageVariants}
+        transition={pageTransition}
+      >
+        <SectionSkills
+          className="skills"
+          html="uil uil-html5 icons"
+          css="fab fa-css3-alt icons"
+          sass="fab fa-sass icons"
+          npm="fab fa-npm icons"
+          js="fab fa-js-square icons"
+          react="uil uil-react icons"
+          git="fab fa-git icons"
+          github="fab fa-github icons"
+          slack="fab fa-slack icons"
+          ubuntu="uil uil-linux icons"
+          terminal="fas fa-terminal icons"
+          node="fab fa-node icons"
+          database="uil uil-database icons"
+          isdarkMode={isdarkMode}
+        />
+      </motion.div>
     </article>
   );
 };

@@ -1,7 +1,7 @@
 @import "../../../styles/Variables.scss";
 .hero-black {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,6 +50,20 @@
       margin-top: 50px;
     }
   }
+  &__img {
+    width: 200px;
+    height: 200px;
+    //border: 5px rgba(247, 150, 192, 1) solid;
+    border-radius: 50%;
+    /*box-shadow: 0 5px 15px 0px rgb(223, 86, 145);*/
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+
+    @media all and(min-width:768px) {
+      width: 250px;
+      height: 250px;
+    }
+  }
 };
 
 .hero-white {
@@ -72,8 +86,8 @@
     animation: float 6s ease-in-out infinite;
 
     @media all and(min-width:768px) {
-      width: 350px;
-      height: 350px;
+      width: 250px;
+      height: 250px;
     }
   }
 
@@ -128,3 +142,20 @@
   }
 }
 
+//image float
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}

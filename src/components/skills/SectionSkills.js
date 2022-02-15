@@ -36,7 +36,9 @@ const SectionSkills = (props) => {
       <span className="skills-item">
         <i className={props.terminal} title="Terminal"></i>
       </span>
-      {/*Buscar Ubuntu */}
+      <span className="skills-item">
+        <i className={props.ubuntu}></i>
+      </span>
     </section>
     <h4 className={`article-${props.isdarkMode()}__text`}>
         <i className="fas fa-angle-left"></i> Back-End /
