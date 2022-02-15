@@ -53,7 +53,9 @@
     &--change{
       border-radius: 50%;
     }
-  
+  }
+  &__transl{
+    cursor: pointer;
   }
 }
 
