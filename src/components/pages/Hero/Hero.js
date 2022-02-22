@@ -5,8 +5,8 @@ import octocal from "../../../images/hero/mi_octocal.png";
 import { Link } from "react-router-dom";
 import translateESContain from "../../../services/es/translateES.json";
 import translateENContain from "../../../services/en/translateEN.json";
-import Particles from "react-tsparticles";
-import particlesOptions from "../../../services/particles/particles.json";
+//import Particles from "react-tsparticles";
+//import particlesOptions from "../../../services/particles/particles.json";
 import Links from "../../utils/Links";
 
 const Hero = ({isdarkMode , translate}) => {
@@ -15,7 +15,7 @@ const Hero = ({isdarkMode , translate}) => {
   return (
     <>
       <section className={"hero-" + isdarkMode()}>
-        <div><Particles options={particlesOptions}/></div>
+        {/*<div><Particles options={particlesOptions}/></div>*/}
         
         <img className={`hero-${isdarkMode()}__img`} src={octocal} alt="octocal" />
         <div className={`hero-${isdarkMode()}__Iam`}>

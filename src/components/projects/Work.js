@@ -16,6 +16,8 @@ import harry from "../../images/proyectos/howart.png";
 import git from "../../images/proyectos/git.png";
 import hagman from "../../images/proyectos/hagman.png";
 import SectionsWork from "./SectionsWork";
+//import Filtered from "./Filtered";
+//import { useState } from "react";
 
 const Work = ({
   isdarkMode,
@@ -26,6 +28,19 @@ const Work = ({
 }) => {
   const titleEN = translateENContain.projects;
   const titleES = translateESContain.projects;
+
+  {/*const [filterTecnologies, setFilterTecnologies] = useState("all");
+  const handleSearch = (value) => {
+    setFilterTecnologies(value);
+  };*/
+
+  /*const filtered = titleES.filter((item,index) =>{
+    if(filterTecnologies === "all"){
+     return item.num+index
+    }else{
+      return item.num+index === filterTecnologies;
+    }
+  })*/}
   return (
     <>
       <section className={`project-${isdarkMode()}`}>
@@ -34,6 +49,7 @@ const Work = ({
             {translate ? "My Projects" : "Mis Proyectos"}
           </h2>
         </div>
+        {/*<Filtered filterTecnologies={filterTecnologies} handleSearch={handleSearch}/>*/}
         <motion.div
           style={pageStyle}
           initial="initial"
