@@ -1,0 +1,174 @@
+import anonimus from "../../images/proyectos/Anonimus-proxy.png";
+import spotify from "../../images/proyectos/Spotify.png";
+import fantasticas from "../../images/proyectos/collage_4Fantasticas.jpg";
+import animeSearch from "../../images/proyectos/search-anime.png";
+import juegoPPT from "../../images/proyectos/juego-piedra-papel-tijeras.png";
+import peso from "../../images/proyectos/juego-tu-peso.png";
+import rick from "../../images/proyectos/rick.jpg";
+import bingo from "../../images/proyectos/game_bingo.png";
+import harry from "../../images/proyectos/howart.png";
+import git from "../../images/proyectos/git.png";
+import hagman from "../../images/proyectos/hagman.png";
+
+const projects = [
+  {
+    name: "Buscador de Personajes de Rick y Morty",
+    images: rick,
+    alt: "search-characters",
+    LinkGitHub:
+      "https://github.com/Vianam92/Buscador--personajes-Rick-and-Morty",
+    LinkPage: "https://vianam92.github.io/Buscador--personajes-Rick-and-Morty/",
+    text: [
+      "uil uil-html5 icon",
+      "fab fa-css3-alt icon",
+      "fab fa-sass icon",
+      "fab fa-npm icon",
+      "fab fa-js-square icon",
+      "uil uil-react icon",
+      "fab fa-node icon",
+    ],
+    description:
+      "Consistió en desarrollar una página web con un listado de personajes de Rick and Morty, que podemos filtrar por el nombre del personaje,especie y status. Además si haces click en el personaje podrás conocer más sobre él.",
+  },
+  {
+    name: "Buscador de Personajes de Harry Potter",
+    alt: "search-characters",
+    images:harry,
+    LinkGitHub: "https://github.com/Vianam92/search-character-Harry-Potter",
+    LinkPage: "https://vianam92.github.io/search-character-Harry-Potter/",
+    text: [
+      "uil uil-html5 icon",
+      "fab fa-css3-alt icon",
+      "fab fa-sass icon",
+      "fab fa-npm icon",
+      "fab fa-js-square icon",
+      "uil uil-react icon",
+      "fab fa-node icon",
+    ],
+    description:
+      "Consistió en desarrollar una página web con un listado de personajes de Harry Potter, que podemos filtrar por el nombre del personaje y por Casa. Además si haces click en el personaje podrás conocer más sobre él.",
+  },
+  {
+    name: "Buscador de Series Anime",
+    alt: "search-Anime",
+    images:animeSearch,
+    LinkGitHub:
+      "https://github.com/Vianam92/movies-anime-search",
+    LinkPage: "https://vianam92.github.io/movies-anime-search/",
+    text: [
+      "uil uil-html5 icon",
+      "fab fa-css3-alt icon",
+      "fab fa-sass icon",
+      "fab fa-npm icon",
+      "fab fa-js-square icon",
+    ],
+    description:
+      "Buscador de Series Anime, se solicita la información de una Api, y el usuari@ puede interactuar marcando/desmarcando sus series favoritas.",
+  },
+  {
+    name: "Hangman Game",
+    alt: "hagman",
+    images:hagman,
+    LinkGitHub: "https://github.com/Vianam92/hangman-game/",
+    LinkPage: "https://vianam92.github.io/hangman-game/",
+    text: [
+      "uil uil-html5 icon",
+      "fab fa-css3-alt icon",
+      "fab fa-js-square icon",
+      "uil uil-react icon",
+      "fab fa-node icon",
+    ],
+    description:
+      "Juego realizado durante el pairPrograming aplicando funcionalidades con React. Adapte el proyecto a responsive.",
+  },
+  {
+    name: "Bingo",
+    alt: "Bingo Game",
+    images:bingo,
+    LinkGitHub: "https://github.com/Vianam92/juego-bingo",
+    LinkPage: "https://vianam92.github.io/juego-bingo/",
+    text: [
+      "uil uil-html5 icon",
+      "fab fa-css3-alt icon",
+      "fab fa-sass icon",
+      "fab fa-npm icon",
+      "fab fa-js-square icon",
+    ],
+    description:
+      "Al pulsar el botón 'Saca una bolita' se genera y muestra un nuevo número aleatorio en la parte Bolitas. Si se pulsa una vez el botón de play ► se generará una bolita nueva cada un segundo. Cuando hayan aparecido todas las bolitas de los números de nuestro cartón se muestra el mensaje 'Han cantado bingo!!!' y se ocultan los botones de 'Saca una bolita' y Play.",
+  },
+  {
+    name: "Juego-Piedra-Papel-Tijeras",
+    alt: "search-Anime",
+    images:juegoPPT,
+    LinkGitHub: "https://github.com/Vianam92/juego-piedra-papel-tijeras",
+    LinkPage: "https://vianam92.github.io/juego-piedra-papel-tijeras/",
+    text: [
+      "uil uil-html5 icon",
+      "fab fa-css3-alt icon",
+      "fab fa-sass icon",
+      "fab fa-npm icon",
+      "fab fa-js-square icon",
+    ],
+    description:
+      "En el juego ambos jugadores tienen que hacer una piedra, papel o tijeras. Solo tiene dos resultados posibles: un empate o una victoria para un jugador y una derrota para el otro jugador.",
+  },
+  {
+    name: "Anonimus",
+    alt: "anonimus",
+    images:anonimus,
+    LinkGitHub: "https://github.com/Vianam92/Anonimus-Proxy",
+    LinkPage: "https://vianam92.github.io/Anonimus-Proxy/",
+    text: ["uil uil-html5 icon", "fab fa-css3-alt icon", "fab fa-sass icon"],
+    description: "Página web donde realice la maquetación desde 0.",
+  },
+  {
+    name: "Página Spotify",
+    alt: "spotify",
+    images:spotify,
+    LinkGitHub: "https://github.com/Vianam92/page-Spotify",
+    LinkPage: "https://vianam92.github.io/page-Spotify/",
+    text: ["uil uil-html5 icon", "fab fa-css3-alt icon", "fab fa-sass icon"],
+    description: "Maquetación de la página web de spotify",
+  },
+  {
+    name: "Proyecto de Equipo",
+    alt: "4 fantáticas",
+    images:fantasticas,
+    LinkGitHub: "https://github.com/Vianam92/project-promo-o-module-1-team-8",
+    LinkPage: "https://beta.adalab.es/project-promo-o-module-1-team-8/",
+    text: ["uil uil-html5 icon", "fab fa-css3-alt icon", "fab fa-sass icon"],
+    description:
+      "Proyecto de Equipo que consistio en realizar una página web desde 0 para darnos a conocer como programadoras.",
+  },
+  {
+    name: "Tu peso en Marte/Júpiter",
+    alt: "tu peso en Marte/Jupiter",
+    images:peso,
+    LinkGitHub: "https://github.com/Vianam92/Tu_peso_en_Marte_Jupiter",
+    LinkPage: "https://vianam92.github.io/Tu_peso_en_Marte_Jupiter/",
+    text: [
+      "uil uil-html5 icon",
+      "fab fa-css3-alt icon",
+      "fab fa-js-square icon",
+    ],
+    description:
+      "Si tienes curiosidad cuanto pesas en marte o en jupiter esta es tu oportunidad de averiguarlo.",
+  },
+  {
+    name: "Get Token from GitHub",
+    alt: "token image",
+    images:git,
+    LinkGitHub: "https://github.com/Vianam92/js-api-github",
+    LinkPage: "https://vianam92.github.io/js-api-github/",
+    text: [
+      "uil uil-html5 icon",
+      "fab fa-css3-alt icon",
+      "fab fa-js-square icon",
+    ],
+    description:
+      "Nuestra aplicación consta de un campo donde escribir el nick de un usuaria de la plataforma de GitHub.",
+  },
+];
+
+export default projects;
