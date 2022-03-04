@@ -12,6 +12,7 @@ import hagman from "../../images/proyectos/hagman.png";
 
 const projects = [
   {
+    key:["personal", "react", "all"],
     name: "Buscador de Personajes de Rick y Morty",
     images: rick,
     alt: "search-characters",
@@ -31,6 +32,7 @@ const projects = [
       "Consistió en desarrollar una página web con un listado de personajes de Rick and Morty, que podemos filtrar por el nombre del personaje,especie y status. Además si haces click en el personaje podrás conocer más sobre él.",
   },
   {
+    key:["personal", "react", "all"],
     name: "Buscador de Personajes de Harry Potter",
     alt: "search-characters",
     images:harry,
@@ -49,6 +51,7 @@ const projects = [
       "Consistió en desarrollar una página web con un listado de personajes de Harry Potter, que podemos filtrar por el nombre del personaje y por Casa. Además si haces click en el personaje podrás conocer más sobre él.",
   },
   {
+    key:["personal" , "javascript","all"],
     name: "Buscador de Series Anime",
     alt: "search-Anime",
     images:animeSearch,
@@ -66,6 +69,7 @@ const projects = [
       "Buscador de Series Anime, se solicita la información de una Api, y el usuari@ puede interactuar marcando/desmarcando sus series favoritas.",
   },
   {
+    key:["pair", "react","all"],
     name: "Hangman Game",
     alt: "hagman",
     images:hagman,
@@ -82,6 +86,7 @@ const projects = [
       "Juego realizado durante el pairPrograming aplicando funcionalidades con React. Adapte el proyecto a responsive.",
   },
   {
+    key:["personal", "react","all"],
     name: "Bingo",
     alt: "Bingo Game",
     images:bingo,
@@ -98,6 +103,7 @@ const projects = [
       "Al pulsar el botón 'Saca una bolita' se genera y muestra un nuevo número aleatorio en la parte Bolitas. Si se pulsa una vez el botón de play ► se generará una bolita nueva cada un segundo. Cuando hayan aparecido todas las bolitas de los números de nuestro cartón se muestra el mensaje 'Han cantado bingo!!!' y se ocultan los botones de 'Saca una bolita' y Play.",
   },
   {
+    key:["personal", "javascript","all"],
     name: "Juego-Piedra-Papel-Tijeras",
     alt: "search-Anime",
     images:juegoPPT,
@@ -114,6 +120,7 @@ const projects = [
       "En el juego ambos jugadores tienen que hacer una piedra, papel o tijeras. Solo tiene dos resultados posibles: un empate o una victoria para un jugador y una derrota para el otro jugador.",
   },
   {
+    key:["personal","all"],
     name: "Anonimus",
     alt: "anonimus",
     images:anonimus,
@@ -123,6 +130,7 @@ const projects = [
     description: "Página web donde realice la maquetación desde 0.",
   },
   {
+    key:["personal","all"],
     name: "Página Spotify",
     alt: "spotify",
     images:spotify,
@@ -132,6 +140,7 @@ const projects = [
     description: "Maquetación de la página web de spotify",
   },
   {
+    key:["team","all"],
     name: "Proyecto de Equipo",
     alt: "4 fantáticas",
     images:fantasticas,
@@ -142,6 +151,7 @@ const projects = [
       "Proyecto de Equipo que consistio en realizar una página web desde 0 para darnos a conocer como programadoras.",
   },
   {
+    key:["personal", "javascript","all"],
     name: "Tu peso en Marte/Júpiter",
     alt: "tu peso en Marte/Jupiter",
     images:peso,
@@ -156,6 +166,7 @@ const projects = [
       "Si tienes curiosidad cuanto pesas en marte o en jupiter esta es tu oportunidad de averiguarlo.",
   },
   {
+    key:["personal", "javascript","all"],
     name: "Get Token from GitHub",
     alt: "token image",
     images:git,
