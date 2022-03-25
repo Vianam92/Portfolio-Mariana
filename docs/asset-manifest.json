@@ -1,25 +1,30 @@
 {
   "files": {
-    "main.css": "./static/css/main.fb198b1b.css",
-    "main.js": "./static/js/main.242c93c5.js",
+    "main.css": "./static/css/main.25ae1b8c.css",
+    "main.js": "./static/js/main.63e161a5.js",
     "static/media/Anonimus-proxy.png": "./static/media/Anonimus-proxy.f41d525eea72a28852dd.png",
     "static/media/hagman.png": "./static/media/hagman.21ba37570546a32228e7.png",
+    "static/media/Dreadful Tomato - HOME.png": "./static/media/Dreadful Tomato - HOME.c8021ef7a13f437152c3.png",
     "static/media/howart.png": "./static/media/howart.e7b0ae53659c5ae322b0.png",
     "static/media/mi_octocal.png": "./static/media/mi_octocal.cc9801b355eeba89eeb3.png",
     "static/media/search-anime.png": "./static/media/search-anime.53bab88eb390eab922c2.png",
     "static/media/rick.jpg": "./static/media/rick.6267af1c907f53af0469.jpg",
     "static/media/Spotify.png": "./static/media/Spotify.4ce3884fa00571582528.png",
+    "static/media/generador-de-tarjetas-3.png": "./static/media/generador-de-tarjetas-3.f9dd41e55b78f7475d8d.png",
     "static/media/game_bingo.png": "./static/media/game_bingo.db3a53330e9756432004.png",
+    "static/media/generador-tarjetas-2.png": "./static/media/generador-tarjetas-2.659c88fd5227342ebc1a.png",
     "static/media/collage_4Fantasticas.jpg": "./static/media/collage_4Fantasticas.77e517532176002ba070.jpg",
     "static/media/juego-tu-peso.png": "./static/media/juego-tu-peso.dabb49a200f2b0faf345.png",
     "static/media/juego-piedra-papel-tijeras.png": "./static/media/juego-piedra-papel-tijeras.a24def69a3d69ebfbad3.png",
+    "static/media/pomodoro.png": "./static/media/pomodoro.fde6ba2e115d4dd782fa.png",
     "static/media/git.png": "./static/media/git.208d15533c060191b26f.png",
+    "static/media/tareas.png": "./static/media/tareas.c598bb8f7f5d3bdea70b.png",
     "index.html": "./index.html",
-    "main.fb198b1b.css.map": "./static/css/main.fb198b1b.css.map",
-    "main.242c93c5.js.map": "./static/js/main.242c93c5.js.map"
+    "main.25ae1b8c.css.map": "./static/css/main.25ae1b8c.css.map",
+    "main.63e161a5.js.map": "./static/js/main.63e161a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb198b1b.css",
-    "static/js/main.242c93c5.js"
+    "static/css/main.25ae1b8c.css",
+    "static/js/main.63e161a5.js"
   ]
 }
