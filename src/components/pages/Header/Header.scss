@@ -6,6 +6,7 @@
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color:$color-title-black;
   &__div{
     background-color: rgb(12, 94, 94);
@@ -61,4 +62,12 @@
 
 .div{
   background-color: #1d1d1d;
+}
+
+.section-onOff{
+  display:flex;
+  align-items: center;
+  &__p{
+    padding:5px;
+  }
 }

@@ -2,6 +2,7 @@ import "./AboutMe.scss";
 import { motion } from "framer-motion";
 import translateESContain from "../../../services/es/translateES.json";
 import translateENContain from "../../../services/en/translateEN.json";
+//import photo from "../../../images/photo_perfil.png";
 
 const AboutMe = ({isdarkMode , translate , pageStyle ,pageVariants ,pageTransition}) => {
     const titleEN = translateENContain.aboutMe;
@@ -9,9 +10,9 @@ const AboutMe = ({isdarkMode , translate , pageStyle ,pageVariants ,pageTransiti
   return (
     <article className={`aboutMe-${isdarkMode()}`}>
       <h2 className={`aboutMe-${isdarkMode()}__h2`}>{translate?titleEN.title:titleES.title}</h2>
-      <figure className={`aboutMe-${isdarkMode()}__images`}>
-        {/*<img src={photo} className="aboutMe__images--photo" alt="photoMariana"/>*/}
-      </figure>
+      {/*<figure className={`aboutMe__images`}>
+        <img src={photo} className="aboutMe__images--photo" alt="photoMariana"/>
+      </figure>*/}
       <motion.div
       style={pageStyle}
       initial="initial"

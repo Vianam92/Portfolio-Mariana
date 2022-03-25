@@ -2,8 +2,8 @@ import "./Work.scss";
 import { motion } from "framer-motion";
 import projectsES from "../../services/es/projectsES";
 import projectsEN from "../../services/en/projectsEN";
-//import { useState } from "react";
-//import SearchProjects from "./SearchProjects";
+import { useState } from "react";
+import SearchProjects from "./SearchProjects";
 
 const Work = ({
   isdarkMode,
@@ -12,15 +12,22 @@ const Work = ({
   pageVariants,
   pageTransition,
 }) => {
-  /*const [searchTeam, setSearchTeam] = useState("all");
+  const [searchTeam, setSearchTeam] = useState("Todos");
+  const [searchTeamEN, setSearchTeamEN] = useState("All");
 
   const handleClickTeam = (value) => {
-    if(projectsES.key.includes("team")){
-      setSearchTeam(value)
-    }
-  };*/
+    translate?setSearchTeamEN(value):setSearchTeam(value);
+  };
 
-  const renderProjectsES = projectsES.map((project, index) => {
+  const filteredProjectsES = projectsES.filter((work) =>
+    work.key.includes(searchTeam)
+  );
+
+  const filteredProjectsEN = projectsEN.filter((work) =>
+    work.key.includes(searchTeamEN)
+  );
+
+  const renderProjectsES = filteredProjectsES.map((project, index) => {
     return (
       <section key={index} className={`project-${isdarkMode()}__section`}>
         <div className="link-projects">
@@ -55,7 +62,7 @@ const Work = ({
         </div>
         <div className={`project-${isdarkMode()}__section--tecnolog`}>
           {project.text.map((item, index) => {
-            return <i className={item} title="herramientas" key={index}></i>;
+            return <small key={index}><i className={item} title="herramientas" ></i></small>;
           })}
         </div>
         <p className={`project-${isdarkMode()}__section--description`}>
@@ -64,7 +71,7 @@ const Work = ({
       </section>
     );
   });
-  const renderProjectsEN = projectsEN.map((project, index) => {
+  const renderProjectsEN = filteredProjectsEN.map((project, index) => {
     return (
       <section key={index} className={`project-${isdarkMode()}__section`}>
         <div className="link-projects">
@@ -99,7 +106,7 @@ const Work = ({
         </div>
         <div className={`project-${isdarkMode()}__section--tecnolog`}>
           {project.text.map((item, index) => {
-            return <i className={item} title="herramientas" key={index}></i>;
+            return <small key={index}><i className={item} title="herramientas" ></i></small>;
           })}
         </div>
         <p className={`project-${isdarkMode()}__section--description`}>
@@ -124,10 +131,7 @@ const Work = ({
         variants={pageVariants}
         transition={pageTransition}
       >
-        {/*<SearchProjects
-          searchTeam={searchTeam}
-          handleClickTeam={handleClickTeam}
-        />*/}
+        <SearchProjects handleClickTeam={handleClickTeam} translate={translate}/>
         <article className={`project-${isdarkMode()}__article`}>
           {translate ? renderProjectsEN : renderProjectsES}
         </article>
