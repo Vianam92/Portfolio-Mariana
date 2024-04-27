@@ -3,6 +3,7 @@
 .project-black{
   padding:20px;
   display: flex;
+  scroll-margin-block-start: 100px;
   align-items: center;
   flex-direction: column;
   box-shadow: 3px 5px 20px rgba(0,0,0,.5);
@@ -152,6 +153,7 @@
   flex-direction: column;
   box-shadow: 3px 5px 20px rgba(0,0,0,.5);
   background-color: $color-back;
+  scroll-margin-block-start:100px;
   &::-webkit-scrollbar {
     -webkit-appearance: none;
   }

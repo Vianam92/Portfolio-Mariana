@@ -1,4 +1,4 @@
-import { Switch, Route ,useLocation } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 //Styles
 import "../styles/App.scss";
 import "../styles/Reset.scss";
@@ -6,27 +6,27 @@ import "../styles/Reset.scss";
 //Componentes
 import Hero from "./pages/Hero/Hero";
 import Header from "./pages/Header/Header";
-import Menu from "./utils/Menu";
+/* import Menu from "./utils/Menu"; */
 import AboutMe from "./pages/AboutMe/AboutMe";
 import Work from "./projects/Work";
 import Footer from "./pages/Footer/Footer";
 import Skills from "./skills/Skills";
-import Button from "../components/utils/Button";
-import { AnimatePresence} from "framer-motion";
-import { useState  } from "react";
+/* import Button from "../components/utils/Button";
+import { AnimatePresence } from "framer-motion"; */
+import { useState } from "react";
 
 function App() {
   const [darkmode, setDarkMode] = useState(false);
   const [input, setInput] = useState("");
   const [textarea, setTextarea] = useState("");
-  const [translate,setTranslate] = useState(false);
+  const [translate, setTranslate] = useState(false);
   //const [activeLink, setActiveLink] = useState("");
 
-  const handleSubmit = (value) =>{
+  const handleSubmit = (value) => {
     setInput(value);
   };
 
-  const handleTextarea = (value) =>{
+  const handleTextarea = (value) => {
     setTextarea(value);
   };
 
@@ -34,7 +34,7 @@ function App() {
     setDarkMode(!darkmode);
   };
 
-  const handleTranslate = () =>{
+  const handleTranslate = () => {
     setTranslate(!translate);
   };
 
@@ -47,47 +47,84 @@ function App() {
     }
   };*/
 
-  const location = useLocation();
+/*   const location = useLocation(); */
   const pageVariants = {
     initial: {
       opacity: 0,
       x: "-100vw",
-      scale: 0.8
+      scale: 0.8,
     },
     in: {
       opacity: 1,
       x: 0,
-      scale: 1
+      scale: 1,
     },
     out: {
       opacity: 0,
       x: "100vw",
-      scale: 1.2
-    }
+      scale: 1.2,
+    },
   };
-  
+
   const pageTransition = {
     type: "tween",
     ease: "anticipate",
-    duration: 0.5
+    duration: 0.5,
   };
-  
+
   const pageStyle = {
     position: "relative",
-    width:"100%",
-    textAlign:"center",
-    display:"flex",
-    flexDirection:"column",
-    alignItems:"center"
+    width: "100%",
+    textAlign: "center",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   };
 
   return (
     <>
-      <Header handleDarkMode={handleDarkMode} isdarkMode={isdarkMode} handleTranslate={handleTranslate} translate={translate}/>
+      <Header
+        handleDarkMode={handleDarkMode}
+        isdarkMode={isdarkMode}
+        handleTranslate={handleTranslate}
+        translate={translate}
+      />
       <Route path="/" exact>
-        <Hero isdarkMode={isdarkMode} translate={translate}/>
+        <Hero isdarkMode={isdarkMode} translate={translate} />
+        <AboutMe
+          isdarkMode={isdarkMode}
+          translate={translate}
+          pageVariants={pageVariants}
+          pageTransition={pageTransition}
+          pageStyle={pageStyle}
+        />
+        <Skills
+          isdarkMode={isdarkMode}
+          translate={translate}
+          pageVariants={pageVariants}
+          pageTransition={pageTransition}
+          pageStyle={pageStyle}
+        />
+        <Work
+          isdarkMode={isdarkMode}
+          translate={translate}
+          pageVariants={pageVariants}
+          pageTransition={pageTransition}
+          pageStyle={pageStyle}
+        />
+        <Footer
+          isdarkMode={isdarkMode}
+          handleSubmit={handleSubmit}
+          input={input}
+          textarea={textarea}
+          handleTextarea={handleTextarea}
+          translate={translate}
+          pageVariants={pageVariants}
+          pageTransition={pageTransition}
+          pageStyle={pageStyle}
+        />
       </Route>
-      <AnimatePresence>
+      {/* <AnimatePresence>
       <Switch location={location} key={location.pathname}>
         <Route path="/menu">
           <Menu isdarkMode={isdarkMode} translate={translate} pageVariants={pageVariants} pageTransition={pageTransition} pageStyle={pageStyle}/>
@@ -109,7 +146,7 @@ function App() {
           <Footer isdarkMode={isdarkMode} handleSubmit={handleSubmit} input={input} textarea={textarea} handleTextarea={handleTextarea} translate={translate} pageVariants={pageVariants} pageTransition={pageTransition} pageStyle={pageStyle}/>
         </Route>
       </Switch>
-      </AnimatePresence>
+      </AnimatePresence> */}
     </>
   );
 }

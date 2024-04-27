@@ -10,7 +10,7 @@ const Skills = ({
   pageTransition,
 }) => {
   return (
-    <article className={`article-${isdarkMode()}`}>
+    <article className={`article-${isdarkMode()}`} id="tools">
       <h2 className={`article-${isdarkMode()}__tecnologias`}>
         {translate ? "Technologies" : "Tecnologías"}
       </h2>

@@ -8,7 +8,7 @@ const AboutMe = ({isdarkMode , translate , pageStyle ,pageVariants ,pageTransiti
     const titleEN = translateENContain.aboutMe;
     const titleES = translateESContain.aboutMe;
   return (
-    <article className={`aboutMe-${isdarkMode()}`}>
+    <article className={`aboutMe-${isdarkMode()}`} id="aboutMe">
       <h2 className={`aboutMe-${isdarkMode()}__h2`}>{translate?titleEN.title:titleES.title}</h2>
       {/*<figure className={`aboutMe__images`}>
         <img src={photo} className="aboutMe__images--photo" alt="photoMariana"/>

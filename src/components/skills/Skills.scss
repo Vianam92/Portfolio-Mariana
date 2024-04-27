@@ -4,7 +4,8 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    justify-content: center;
+    height: 100vh;
     background-color: $color-black;
     &__tecnologias{
         @include title-h2;
@@ -61,6 +62,8 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+    justify-content: center;
     &__tecnologias{
         @include title-h2;
         color:$color-blue;

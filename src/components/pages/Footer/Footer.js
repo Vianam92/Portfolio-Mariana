@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Footer = ({handleSubmit,input,isdarkMode,translate , pageStyle ,pageVariants ,pageTransition ,textarea ,handleTextarea}) => {
 
   return (
-    <footer className={`footer-${isdarkMode()}`}>
+    <footer className={`footer-${isdarkMode()}`} id="contact">
       <motion.div
       style={pageStyle}
       initial="initial"

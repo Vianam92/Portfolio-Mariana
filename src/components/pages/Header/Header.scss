@@ -1,43 +1,131 @@
 @import "../../../styles/Variables.scss";
 
-.header-black{
+.header-black {
   width: 100%;
   background-color: #1d1d1d;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color:$color-title-black;
-  &__div{
+  color: $color-title-black;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  &_nav {
+    display: none;
+    column-gap: 20px;
+    @media all and(min-width:768px) {
+      display: flex;
+    }
+    a {
+      color: $color-title-black;
+    }
+  }
+  &_bars {
+    position: absolute;
+    right: -10px;
+    background-color: #1d1d1dc6;
+    padding:4px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    row-gap: 10px;
+    width: 100px;
+    transition: all 0.6s;
+    transform: translateY(20px);
+   a{
+    color: $color-title-black;
+   }
+  }
+  &__isNotActive{
+    transition: all 0.6s;
+    transform: translateY(-20px);
+  }
+  .bars {
+    display: block;
+    position: relative;
+    @media all and(min-width:768px) {
+      display: none;
+    }
+  }
+  &icon {
+    color: white;
+    cursor:pointer;
+  }
+  &__div {
     background-color: rgb(12, 94, 94);
     width: 40px;
     height: 20px;
     line-height: 20px;
     padding: 1px;
     border-radius: 30px;
-    @media all and(min-width:768px){
+    @media all and(min-width:768px) {
       width: 50px;
       height: 35px;
       line-height: 30px;
-      padding:5px;
+      padding: 5px;
     }
-    &--change{
+    &--change {
       border-radius: 50%;
     }
-  };
-  &__transl{
+  }
+  &__transl {
     cursor: pointer;
   }
 }
 
-.header-white{
+.header-white {
   width: 100%;
-  background-color: rgba(24, 170, 207, 0.514);
+  background-color: rgba(24, 170, 207, 0.814);
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  color:$color-blue;
-  &__div{
+  color: $color-blue;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  &_nav {
+    display: none;
+    column-gap: 20px;
+    @media all and(min-width:768px) {
+      display: flex;
+    }
+    a {
+      color: $color-blue;
+    }
+  }
+  &_bars {
+    position: absolute;
+    right: -19px;
+    padding:4px;
+    background-color: rgba(24, 170, 207, 0.814);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    row-gap: 10px;
+    width: 120px;
+    transition: all 0.6s;
+    transform: translateY(27px);
+   a{
+    color: $color-blue;
+   }
+  }
+  &__isNotActive{
+    transition: all 0.6s;
+    transform: translateY(-20px);
+  }
+  .bars {
+    display: block;
+    position: relative;
+    @media all and(min-width:768px) {
+      display: none;
+    }
+  }
+  &icon {
+    color: white;
+    cursor:pointer;
+  }
+  &__div {
     background-color: #0212146b;
     width: 40px;
     border-radius: 30px;
@@ -45,29 +133,29 @@
     line-height: 20px;
     padding: 1px;
     text-align: right;
-    @media all and(min-width:768px){
+    @media all and(min-width:768px) {
       width: 50px;
       height: 35px;
       line-height: 30px;
-      padding:5px;
+      padding: 5px;
     }
-    &--change{
+    &--change {
       border-radius: 50%;
     }
   }
-  &__transl{
+  &__transl {
     cursor: pointer;
   }
 }
 
-.div{
+.div {
   background-color: #1d1d1d;
 }
 
-.section-onOff{
-  display:flex;
+.section-onOff {
+  display: flex;
   align-items: center;
-  &__p{
-    padding:5px;
+  &__p {
+    padding: 5px;
   }
 }

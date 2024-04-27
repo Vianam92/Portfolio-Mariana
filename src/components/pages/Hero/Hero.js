@@ -22,9 +22,9 @@ const Hero = ({isdarkMode , translate}) => {
           <h1 className={`hero-${isdarkMode()}__Iam--title`}>{translate?titleEN.title:titleES.title}</h1> 
           <h2 className={`hero-${isdarkMode()}__Iam--title`}>{translate?titleEN.I:titleES.I}</h2>
           <h3 className={`hero-${isdarkMode()}__Iam--text`}>{translate?titleEN.am:titleES.am}</h3>
-          <Link to="/menu" className={`hero-${isdarkMode()}__Iam--start`}>{translate?titleEN.btn:titleES.btn}</Link>
+         {/*  <Link to="/menu" className={`hero-${isdarkMode()}__Iam--start`}>{translate?titleEN.btn:titleES.btn}</Link> */}
         </div>
-        <Links isdarkMode={isdarkMode}/>
+ {/*        <Links isdarkMode={isdarkMode}/> */}
       </section>
     </>
   );

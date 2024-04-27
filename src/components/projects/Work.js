@@ -117,7 +117,7 @@ const Work = ({
   });
 
   return (
-    <section className={`project-${isdarkMode()}`}>
+    <section className={`project-${isdarkMode()}`} id="projects">
       <div className={`project-${isdarkMode()}__div`}>
         <h2 className={`project-${isdarkMode()}__div--title`}>
           {translate ? "My Projects" : "Mis Proyectos"}
@@ -131,7 +131,7 @@ const Work = ({
         variants={pageVariants}
         transition={pageTransition}
       >
-        <SearchProjects handleClickTeam={handleClickTeam} translate={translate}/>
+{/*         <SearchProjects handleClickTeam={handleClickTeam} translate={translate}/> */}
         <article className={`project-${isdarkMode()}__article`}>
           {translate ? renderProjectsEN : renderProjectsES}
         </article>
