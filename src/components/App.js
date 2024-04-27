@@ -1,4 +1,4 @@
-import { Switch, Route, useLocation } from "react-router-dom";
+import { Route  } from "react-router-dom"; 
 //Styles
 import "../styles/App.scss";
 import "../styles/Reset.scss";

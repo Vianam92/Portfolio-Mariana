@@ -2,12 +2,11 @@
 //Styles
 import "./Hero.scss";
 import octocal from "../../../images/hero/mi_octocal.png";
-import { Link } from "react-router-dom";
 import translateESContain from "../../../services/es/translateES.json";
 import translateENContain from "../../../services/en/translateEN.json";
 //import Particles from "react-tsparticles";
 //import particlesOptions from "../../../services/particles/particles.json";
-import Links from "../../utils/Links";
+/* import Links from "../../utils/Links"; */
 
 const Hero = ({isdarkMode , translate}) => {
   const titleEN = translateENContain.Hero;
