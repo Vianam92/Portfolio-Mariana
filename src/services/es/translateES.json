@@ -1,10 +1,10 @@
 {
   "aboutMe": {
     "title": "Sobre Mí",
-    "text1": "Antes contable, ahora programadora Front-end Jr. Nacida en Cuba pero de descendientes gallegos, 4 generaciones después regreso a la tierra de mis bisabuelos",
-    "text2": "Como buena cubana que soy, me encanta la música y el baile, disfruto de la buena comida, los paseos por la naturaleza y el deporte.",
-    "text3": "Y ya que estoy en un nuevo país, ¿qué mejor que reinventarme? Tras completar varios cursos y estudiar por mi cuenta decidí dar el paso y aplicar a Adalab. Lo que más me gusta de la programación es que no hay límites para seguir aprendiendo y creciendo.",
-    "text4": "Además, la comunidad tech es un sector colaborativo y de trabajo en equipo y estoy orgullosa de pertenecer a él."
+    "text1": "Soy programadora frontend con experiencia en la creación de sitios y aplicaciones web.",
+    "text2": "Mi experiencia profesional estos últimos meses ha sido principalmente con Lit element y web components, además he trabajado con Angular, React y Vuejs.",
+    "text3": "También he trabajado con Typescript, he aplicado testing unitario con jest y cypress. Sigo una filosofía agile en particular la scrum.",
+    "text4": "Actualmente me sigo formando cursando el master Frontend de LemonCode."
   },
   "Hero": {
     "title": "Bienvenid@ a mi Portafolio",

@@ -8,7 +8,7 @@ const Header = ({handleDarkMode , isdarkMode ,handleTranslate , translate}) => {
   return (
     <header className={"header-" + isdarkMode()}>
       <ChangeColor handleDarkMode={handleDarkMode} isdarkMode={isdarkMode}/>
-      <div className={"header-" + isdarkMode()+"__transl"} onClick={handleChangeLanguage}>{translate?"EN":"ES"}</div>
+      <div className={"header-" + isdarkMode()+"__transl"} onClick={handleChangeLanguage}>{translate?"ES":"EN"}</div>
     </header>
   );
 };
