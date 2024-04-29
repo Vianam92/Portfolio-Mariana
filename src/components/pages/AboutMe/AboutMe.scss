@@ -4,10 +4,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     justify-content: center;
     background-color: $color-black;
-    padding: 30px;
+    scroll-margin-block: 100px;
+    padding: 30px 30px 200px 30px;
     box-shadow: 3px 5px 20px rgba(0, 0, 0, .5);
    // background-color: rgba(118, 174, 241, 1);
     &__h2 {
@@ -25,8 +25,9 @@
 
     &__description {
         font-size: 1rem;
-        text-align:center;
+        text-align: justify;
         font-family: monospace;
+        max-width: 650px;
         margin: 10px 5px;
         color: rgba(40, 157, 189, 0.829);
 
@@ -47,11 +48,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    margin: 15px;
     justify-content: center;
+    scroll-margin-block: 100px;
     //border: solid $color-blue 2px;
-    padding: 15px;
+    padding:30px 30px 200px 30px;;
     box-shadow: 3px 5px 20px rgba(0, 0, 0, .5);
     //background-color: rgba(118, 174, 241, 1);
     //scroll-margin-top: 80px;
@@ -70,10 +70,11 @@
 
     &__description {
         font-size: 1rem;
-        text-align: center;
+        text-align: justify;
         margin: 10px 5px;
         font-family: 'Luxurious Roman', cursive;
         color: rgb(11, 40, 48);
+        max-width: 650px;
 
         @media all and (min-width:768px) {
             font-size: 1.5rem;

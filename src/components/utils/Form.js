@@ -23,6 +23,7 @@ const Form = ({ handleSubmit, input, isdarkMode, translate ,textarea ,handleText
         method="post"
         className={`form-${isdarkMode()}`}
       >
+        <label to="">
         <i className="fas fa-user icon"></i>
         <input
           className={`form-${isdarkMode()}__input`}
@@ -33,6 +34,7 @@ const Form = ({ handleSubmit, input, isdarkMode, translate ,textarea ,handleText
           onChange={handleSubmitEvent}
           value={input}
         />
+        </label>
         <textarea
           cols="20"
           rows="5"

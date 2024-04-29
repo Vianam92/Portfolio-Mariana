@@ -55,14 +55,12 @@
   &__div {
     background-color: rgb(12, 94, 94);
     width: 40px;
-    height: 20px;
     line-height: 20px;
     padding: 1px;
     border-radius: 30px;
     @media all and(min-width:768px) {
       width: 50px;
-      height: 35px;
-      line-height: 30px;
+      height: 30px;
       padding: 5px;
     }
     &--change {
@@ -96,7 +94,7 @@
   }
   &_bars {
     position: absolute;
-    right: -19px;
+    right: -20px;
     padding:4px;
     background-color: rgba(24, 170, 207, 0.814);
     display: flex;
@@ -129,15 +127,13 @@
     background-color: #0212146b;
     width: 40px;
     border-radius: 30px;
-    height: 20px;
-    line-height: 20px;
+    line-height: 17px;
     padding: 1px;
     text-align: right;
     @media all and(min-width:768px) {
       width: 50px;
-      height: 35px;
-      line-height: 30px;
-      padding: 5px;
+      height: 30px;
+      padding:5px;
     }
     &--change {
       border-radius: 50%;
