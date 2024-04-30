@@ -1,12 +1,20 @@
 import translateESContain from "../../services/es/translateES.json";
 import translateENContain from "../../services/en/translateEN.json";
 
-const Form = ({ handleSubmit, input, isdarkMode, translate ,textarea ,handleTextarea}) => {
-  const handleSubmitEvent = eve => {
+const Form = ({
+  handleSubmit,
+  input,
+  isdarkMode,
+  translate,
+  textarea,
+  handleTextarea,
+}) => {
+
+  const handleSubmitEvent = (eve) => {
     handleSubmit(eve.target.value);
   };
 
-  const handleSubmitTextarea = eve =>{
+  const handleSubmitTextarea = (eve) => {
     handleTextarea(eve.target.value);
   };
 
@@ -24,16 +32,16 @@ const Form = ({ handleSubmit, input, isdarkMode, translate ,textarea ,handleText
         className={`form-${isdarkMode()}`}
       >
         <label to="">
-        <i className="fas fa-user icon"></i>
-        <input
-          className={`form-${isdarkMode()}__input`}
-          type="text"
-          name="name"
-          placeholder={translate ? "Name" : "Nombre"}
-          autoComplete="off"
-          onChange={handleSubmitEvent}
-          value={input}
-        />
+          <i className="fas fa-user icon"></i>
+          <input
+            className={`form-${isdarkMode()}__input`}
+            type="text"
+            name="name"
+            placeholder={translate ? "Name" : "Nombre"}
+            autoComplete="off"
+            onChange={handleSubmitEvent}
+            value={input}
+          />
         </label>
         <textarea
           cols="20"
@@ -47,9 +55,9 @@ const Form = ({ handleSubmit, input, isdarkMode, translate ,textarea ,handleText
         />
         <input
           type="submit"
-          className={`form-${isdarkMode()}__btn`}
+          className={`form-${isdarkMode()}__btn ${input.length && textarea.length > 0 ? "" : "disable"}`}
           value={translate ? "Send" : "Enviar"}
-          disabled={input.length && textarea.length === 0 ? true : false}
+          disabled={input.length || textarea.length === 0 ? true : false}
         />
       </form>
     </section>

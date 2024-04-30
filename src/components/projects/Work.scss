@@ -40,7 +40,7 @@
   &__article {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     background: $color-black;
     width: 100%;
 
@@ -117,7 +117,7 @@
     &--description {
       font-family: "Luxurious Roman", cursive;
       color: $color-blue;
-      margin: 5px 10px;
+      padding: 20px 10px;
       text-align:center;
     }
   }
@@ -183,7 +183,7 @@
   &__article {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     width: 100%;
 
     @media all and(min-width:768px) {
@@ -259,7 +259,7 @@
     &--description {
       font-family: "Luxurious Roman", cursive;
       color: $color-blue;
-      margin: 5px 10px;
+      padding: 20px 10px;
       text-align:center;
     }
   }

@@ -6,20 +6,20 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top:100px;
+  padding-top: 100px;
   background-color: $color-black;
-  &__contact{
-    padding:50px 20px 0 20px;
+  &__contact {
+    padding: 50px 20px 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    &--text{
-      color:$color-title-black;
+    &--text {
+      color: $color-title-black;
       font-family: monospace;
       max-width: 80%;
       margin-bottom: 35px;
-      @media all and(min-width:750px){
+      @media all and(min-width:750px) {
         font-size: 1.3rem;
         width: 100%;
       }
@@ -31,7 +31,7 @@
     padding: 10px;
     width: 100%;
     border-top: white solid 2px;
-    color:$color-title-black;
+    color: $color-title-black;
     @media all and (min-width: 768px) {
       font-size: 1.2rem;
     }
@@ -43,69 +43,72 @@
       animation: latido 1s infinite linear;
     }
   }
-};
+}
 
-.form-black{
-display: flex;
-width: 80%;
-flex-direction: column;
-label{
-  position:relative;
-  .icon{
-    font-size: 1.1rem;
-    position:absolute;
-    top:8px;
-    color:white;
-    @media all and(min-width:768px){
-      font-size: 1.5rem;
+.form-black {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  label {
+    position: relative;
+    .icon {
+      font-size: 1.1rem;
+      position: absolute;
+      top: 8px;
+      color: white;
+      @media all and(min-width:768px) {
+        font-size: 1.5rem;
+      }
     }
   }
-}
-&__input{
-  width: 100%;
-  border: none;
-  border-bottom:solid 3px $color-title-black;
-  padding:5px 40px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.103);
-  @media all and(min-width:750px){
-    font-size: 1.2rem;
+  &__input {
+    width: 100%;
+    border: none;
+    border-bottom: solid 3px $color-title-black;
+    padding: 5px 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.103);
+    @media all and(min-width:750px) {
+      font-size: 1.2rem;
+    }
+    @media all and(min-width:1200px) {
+      font-size: 1.3rem;
+      width: 50%;
+    }
   }
-  @media all and(min-width:1200px){
-    font-size: 1.3rem;
-    width: 50%;
-  };
-}
-&__textarea{
-  width: 100%;
-  margin-top:50px;
-  padding: 10px;
-  @media all and(min-width:1200px){
-    font-size: 1.3rem;
-  };
-}
-&__btn{
-  margin:20px;
-  width: 100px;
-  height: 30px;
-  background-color: $color-title-black;
-  color:$color-blue;
-  text-transform: uppercase;
-  font-family: monospace;
-  &:hover{
-  font-size: 1.2rem;
+  &__textarea {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    @media all and(min-width:1200px) {
+      font-size: 1.3rem;
+    }
   }
-  @media all and(min-width:750px){
-    width: 150px;
-    font-size: 1.2rem;
-    height: 35px;
+  .disable {
+    background-color: rgba(128, 128, 128, 0.559);
   }
-  @media all and(min-width:1200px){
-    font-size: 1.3rem;
-    width: 200px;
-    height: 40px;
-  };
-}
+  &__btn {
+    margin: 20px 20px 20px 0;
+    width: 100px;
+    height: 30px;
+    background-color: $color-title-black;
+    color: $color-blue;
+    text-transform: uppercase;
+    font-family: monospace;
+    &:hover {
+      font-size: 1.2rem;
+    }
+    @media all and(min-width:750px) {
+      width: 150px;
+      font-size: 1.2rem;
+      height: 35px;
+    }
+    @media all and(min-width:1200px) {
+      font-size: 1.3rem;
+      width: 200px;
+      height: 40px;
+    }
+  }
 }
 
 @keyframes latido {
@@ -120,26 +123,25 @@ label{
   }
 }
 
-
 .footer-white {
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top:100px;
-  &__contact{
-    padding:50px 20px 0 20px;
+  padding-top: 100px;
+  &__contact {
+    padding: 50px 20px 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    &--text{
-      color:$color-blue;
+    &--text {
+      color: $color-blue;
       font-family: monospace;
       max-width: 80%;
       margin-bottom: 35px;
       text-align: justify;
-      @media all and(min-width:750px){
+      @media all and(min-width:750px) {
         font-size: 1.3rem;
       }
     }
@@ -150,7 +152,7 @@ label{
     padding: 10px;
     width: 100%;
     border-top: white solid 2px;
-    color:$color-blue;
+    color: $color-blue;
     @media all and (min-width: 768px) {
       font-size: 1.2rem;
     }
@@ -162,68 +164,71 @@ label{
       animation: latido 1s infinite linear;
     }
   }
-};
-.form-white{
+}
+.form-white {
   display: flex;
-width: 80%;
-flex-direction: column;
-label{
-  position:relative;
-  text-align: left;
-  .icon{
-    font-size: 1.1rem;
-    position:absolute;
-    top:7px;
-    left: 4px;
-    color:$color-title-black;
-    @media all and(min-width:768px){
-      font-size: 1.5rem;
+  row-gap: 20px;
+  width: 80%;
+  flex-direction: column;
+  label {
+    position: relative;
+    text-align: left;
+    .icon {
+      font-size: 1.1rem;
+      position: absolute;
+      top: 7px;
+      left: 4px;
+      color: $color-title-black;
+      @media all and(min-width:768px) {
+        font-size: 1.5rem;
+      }
     }
   }
-}
-&__input{
-  width: 100%;
-  border: none;
-  border-bottom:solid 3px $color-title-black;
-  padding:5px 40px;
-  color: black;
-  background-color: rgba(0, 0, 0, 0.103);
-  @media all and(min-width:750px){
-    font-size: 1.2rem;
+  .disable {
+    background-color: rgba(128, 128, 128, 0.578);
   }
-  @media all and(min-width:1200px){
-    font-size: 1.3rem;
-    width: 50%;
-  };
-}
-&__textarea{
-  width: 100%;
-  margin-top:50px;
-  padding: 10px;
-  @media all and(min-width:1200px){
-    font-size: 1.3rem;
-  };
-}
-&__btn{
-  margin:20px;
-  width: 100px;
-  height: 30px;
-  background-color: $color-title-black;
-  color:$color-blue;
-  text-transform: uppercase;
-  font-family: monospace;
-  &:hover{
-  font-size: 1.2rem;
+  &__input {
+    width: 100%;
+    border: none;
+    border-bottom: solid 3px $color-title-black;
+    padding: 5px 40px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.103);
+    @media all and(min-width:750px) {
+      font-size: 1.2rem;
+    }
+    @media all and(min-width:1200px) {
+      font-size: 1.3rem;
+      width: 50%;
+    }
   }
-  @media all and(min-width:750px){
-    width: 150px;
-    font-size: 1.2rem;
-    height: 35px;
+  &__textarea {
+    width: 100%;
+    padding: 10px;
+    @media all and(min-width:1200px) {
+      font-size: 1.3rem;
+    }
   }
-  @media all and(min-width:1200px){
-    font-size: 1.3rem;
-    width: 200px;
-    height: 40px;
-  };
-}
+  &__btn {
+    margin: 20px 20px 20px 0;
+    width: 100px;
+    height: 30px;
+    background-color: $color-title-black;
+    color: $color-blue;
+    text-transform: uppercase;
+    font-family: monospace;
+    &:hover {
+      font-size: 1.2rem;
+    }
+    @media all and(min-width:750px) {
+      width: 150px;
+      font-size: 1.2rem;
+      height: 35px;
+    }
+    @media all and(min-width:1200px) {
+      font-size: 1.3rem;
+      width: 200px;
+      height: 40px;
+    }
+  }
 }

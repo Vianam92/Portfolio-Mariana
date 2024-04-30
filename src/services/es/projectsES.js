@@ -1,7 +1,33 @@
 import podcast from "../../images/proyectos/musicals_podcast.png";
+import weather from "../../images/proyectos/weather.png";
+import dreadFul from "../../images/proyectos/dreanful.png";
 
 const projects = [
-  /* {
+  {
+    key: ["ReactJS", "Todos"],
+    name: "Musical Podcast",
+    images: podcast,
+    alt: "Prueba Técnica",
+    LinkGitHub: "https://github.com/Vianam92/musicals_podcasts",
+    LinkPage: "https://musicals-podcasts.vercel.app/",
+    text: [
+    ],
+    description:
+      "Aplicación realizada con React y typescript. Hice uso de hooks, proptypes, aplique testing a los componentes y servicios. Para los estilos utilicé styled components.",
+  },
+  {
+    key: ["Lit Element", "Todos"],
+    name: "Weather App",
+    images: weather,
+    alt: "Proyecto Final",
+    LinkGitHub: "https://github.com/Vianam92/weather-app",
+    LinkPage: "https://vianam92.github.io/weather-app/",
+    text: [
+    ],
+    description:
+      "Aplicación realizada como proyecto final de la Generación K. Hice uso de lit element, web components, realice test de los servicios y cypress para probar el flujo de la aplicación. Tiene configuración de docker y hago uso de pipeline.",
+  },
+  {
     key: ["ReactJS", "Todos"],
     name: "DreadFul Tomato",
     images: dreadFul,
@@ -10,36 +36,9 @@ const projects = [
       "https://github.com/Vianam92/DreadFul-Tomato",
     LinkPage: "https://vianam92.github.io/DreadFul-Tomato/",
     text: [
-      "fab fa-html5 icon",
-      "fab fa-css3-alt icon",
-      "fab fa-sass icon",
-      "fab fa-npm icon",
-      "fab fa-js-square icon",
-      "fab fa-react icon",
-      "fab fa-node icon",
     ],
     description:
-      "Construye una aplicación web que permita a los usuarios ver y valorar las últimas películas más taquilleras.",
-  }, */
-  {
-    key: ["ReactJS", "Todos"],
-    name: "Musical Podcast",
-    images: podcast,
-    alt: "Prueba Técnica",
-    LinkGitHub:
-      "https://github.com/Vianam92/musicals_podcasts",
-    LinkPage: "https://github.com/Vianam92/musicals_podcasts",
-    text: [
-      "fab fa-html5 icon",
-      "fab fa-css3-alt icon",
-      "fab fa-sass icon",
-      "fab fa-npm icon",
-      "fab fa-js-square icon",
-      "fab fa-react icon",
-      "fab fa-node icon",
-    ],
-    description:
-      "Aplicación realizada con React y typescript. Hice uso de hooks, proptypes, aplique testing a los componentes y servicios. Para los estilos utilicé styled components.",
+      "Realice esta aplicación con React como un reto técnico en el 2022, actualmente quiero trabajar en su mejora.",
   },
 ];
 

@@ -19,15 +19,15 @@ const Work = ({
     translate?setSearchTeamEN(value):setSearchTeam(value);
   };
 
-  const filteredProjectsES = projectsES.filter((work) =>
+/*   const filteredProjectsES = projectsES.filter((work) =>
     work.key.includes(searchTeam)
   );
 
   const filteredProjectsEN = projectsEN.filter((work) =>
     work.key.includes(searchTeamEN)
-  );
+  ); */
 
-  const renderProjectsES = filteredProjectsES.map((project, index) => {
+  const renderProjectsES = projectsES.map((project, index) => {
     return (
       <section key={index} className={`project-${isdarkMode()}__section`}>
         <div className="link-projects">
@@ -71,7 +71,7 @@ const Work = ({
       </section>
     );
   });
-  const renderProjectsEN = filteredProjectsEN.map((project, index) => {
+  const renderProjectsEN = projectsEN.map((project, index) => {
     return (
       <section key={index} className={`project-${isdarkMode()}__section`}>
         <div className="link-projects">
@@ -131,7 +131,7 @@ const Work = ({
         variants={pageVariants}
         transition={pageTransition}
       >
-        <SearchProjects handleClickTeam={handleClickTeam} translate={translate}/>
+        {/* <SearchProjects handleClickTeam={handleClickTeam} translate={translate}/> */}
         <article className={`project-${isdarkMode()}__article`}>
           {translate ? renderProjectsEN : renderProjectsES}
         </article>
