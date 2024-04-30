@@ -4,11 +4,10 @@ Hola a todos 👋️, este es mi portafolio personal realizado por mi con ❤️
 
 ## Objetivo
 
-Tiene como objetivo darme a conocer para la busqueda de trabajo y que se puedan ver mis proyectos.
+Tiene como objetivo presentarme y mostrar mis proyectos, aunque no están todos publicados, si los que pienso aportan más valor.
 
 ## 🚀 Sobre Mi
-Antes me dedicaba a la contabilidad y ahora estoy despegando como programadora Front-End.
-He descubierto algo que me apasiona, me motiva y que me reta.
+Soy programadora Frontend junior, con casi 2 años de experiencia en el sector y que desea seguir creciendo y aprendiendo.
 
 ## Herramientas utilizadas para realizar este proyecto.
 
