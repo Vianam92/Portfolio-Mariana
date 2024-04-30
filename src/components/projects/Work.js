@@ -2,8 +2,6 @@ import "./Work.scss";
 import { motion } from "framer-motion";
 import projectsES from "../../services/es/projectsES";
 import projectsEN from "../../services/en/projectsEN";
-import { useState } from "react";
-import SearchProjects from "./SearchProjects";
 
 const Work = ({
   isdarkMode,
@@ -12,12 +10,12 @@ const Work = ({
   pageVariants,
   pageTransition,
 }) => {
-  const [searchTeam, setSearchTeam] = useState("Todos");
+/*   const [searchTeam, setSearchTeam] = useState("Todos");
   const [searchTeamEN, setSearchTeamEN] = useState("All");
 
   const handleClickTeam = (value) => {
     translate?setSearchTeamEN(value):setSearchTeam(value);
-  };
+  }; */
 
 /*   const filteredProjectsES = projectsES.filter((work) =>
     work.key.includes(searchTeam)
