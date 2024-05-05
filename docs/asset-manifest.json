@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.2d472434.css",
-    "main.js": "./static/js/main.d7bdbed1.js",
+    "main.css": "./static/css/main.a26a1c5e.css",
+    "main.js": "./static/js/main.7e8947be.js",
     "static/media/dreanful.png": "./static/media/dreanful.3ce13a905c018d51390e.png",
     "static/media/weather.png": "./static/media/weather.526b93ef5e4dac85c0fd.png",
     "static/media/mi_octocal.png": "./static/media/mi_octocal.cc9801b355eeba89eeb3.png",
     "static/media/musicals_podcast.png": "./static/media/musicals_podcast.4ba5dea7b59c883cbf33.png",
     "index.html": "./index.html",
-    "main.2d472434.css.map": "./static/css/main.2d472434.css.map",
-    "main.d7bdbed1.js.map": "./static/js/main.d7bdbed1.js.map"
+    "main.a26a1c5e.css.map": "./static/css/main.a26a1c5e.css.map",
+    "main.7e8947be.js.map": "./static/js/main.7e8947be.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d472434.css",
-    "static/js/main.d7bdbed1.js"
+    "static/css/main.a26a1c5e.css",
+    "static/js/main.7e8947be.js"
   ]
 }
