@@ -47,25 +47,14 @@
 
 .form-black {
   display: flex;
+  row-gap: 30px;
   width: 80%;
   flex-direction: column;
-  label {
-    position: relative;
-    .icon {
-      font-size: 1.1rem;
-      position: absolute;
-      top: 8px;
-      color: white;
-      @media all and(min-width:768px) {
-        font-size: 1.5rem;
-      }
-    }
-  }
   &__input {
     width: 100%;
     border: none;
     border-bottom: solid 3px $color-title-black;
-    padding: 5px 40px;
+    padding: 5px 10px;
     color: white;
     background-color: rgba(0, 0, 0, 0.103);
     @media all and(min-width:750px) {
@@ -78,7 +67,6 @@
   }
   &__textarea {
     width: 100%;
-    margin-top: 50px;
     padding: 10px;
     @media all and(min-width:1200px) {
       font-size: 1.3rem;
@@ -86,10 +74,9 @@
   }
   .disable {
     background-color: rgba(128, 128, 128, 0.559);
+    color: rgba(37, 213, 232, 0.497);
   }
   &__btn {
-    margin: 20px 20px 20px 0;
-    width: 100px;
     height: 30px;
     background-color: $color-title-black;
     color: $color-blue;
@@ -167,23 +154,9 @@
 }
 .form-white {
   display: flex;
-  row-gap: 20px;
+  row-gap: 30px;
   width: 80%;
   flex-direction: column;
-  label {
-    position: relative;
-    text-align: left;
-    .icon {
-      font-size: 1.1rem;
-      position: absolute;
-      top: 7px;
-      left: 4px;
-      color: $color-title-black;
-      @media all and(min-width:768px) {
-        font-size: 1.5rem;
-      }
-    }
-  }
   .disable {
     background-color: rgba(128, 128, 128, 0.578);
   }
@@ -191,7 +164,7 @@
     width: 100%;
     border: none;
     border-bottom: solid 3px $color-title-black;
-    padding: 5px 40px;
+    padding: 5px 10px;
     color: black;
     background-color: rgba(0, 0, 0, 0.103);
     @media all and(min-width:750px) {
@@ -210,8 +183,6 @@
     }
   }
   &__btn {
-    margin: 20px 20px 20px 0;
-    width: 100px;
     height: 30px;
     background-color: $color-title-black;
     color: $color-blue;

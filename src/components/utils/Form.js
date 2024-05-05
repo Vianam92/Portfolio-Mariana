@@ -32,7 +32,6 @@ const Form = ({
         className={`form-${isdarkMode()}`}
       >
         <label to="">
-          <i className="fas fa-user icon"></i>
           <input
             className={`form-${isdarkMode()}__input`}
             type="text"
