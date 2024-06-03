@@ -7,16 +7,16 @@
     "text4": "Actualmente me sigo formando cursando el master Frontend de LemonCode."
   },
   "Hero": {
-    "title": "Este es mi Portafolio",
-    "I": "Mi nombre es Mariana",
-    "am": "y soy Programadora Frontend",
+    "title": "Bienvenido a mi Portafolio",
+    "I": "Soy  Mariana",
+    "am": "Programadora Frontend",
     "btn": "Empezar"
   },
-  "Menu": {
+  "menu": {
     "home": "Inicio",
     "aboutMe": "Sobre Mí",
     "projects": "Proyectos",
-    "skills": "Herramientas",
+    "tecnologies": "Tecnologías",
     "contacts": "Contacto"
   },
   "form":{

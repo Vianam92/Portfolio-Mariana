@@ -1,22 +1,22 @@
 {
     "aboutMe":{
       "title":"About Me",
-      "text1":"Before an accountant, now a Front-end programmer Jr. Born in Cuba but of Galician descent, 4 generations later I return to the land of my great-grandparents",
-      "text2":"As a good Cuban that I am, I love music and dancing, I enjoy good food, walks through nature and sports.",
-      "text3":"And since I'm in a new country, what better way to reinvent myself? After completing several courses and studying on my own, I decided to take the plunge and apply to Adalab. What I like the most about programming is that there are no limits to continue learning and growing.",
-      "text4":"In addition, the tech community is a collaborative and teamwork sector and I am proud to belong to it."
+      "text1":"I am a frontend programmer with experience in creating websites and web applications.",
+      "text2":"My professional experience these last few months has been mainly with Lit element and web components, I have also worked with Angular, React and Vuejs.",
+      "text3":"I've also worked with Typescript, I've applied unit testing with jest and cypress. I follow an agile philosophy, in particular the scrum.",
+      "text4":"I am currently continuing my training by studying the Frontend master's degree at LemonCode."
     },
     "Hero":{
-      "title":"This is my Portfolio",
+      "title":"Welcome to my Portfolio",
       "I":"My name is Mariana",
       "am":"and I am Front-end Developer",
       "btn":"start"
      },
-     "Menu":{
+     "menu":{
       "home":"Home",
       "aboutMe":"About Me",
       "projects":"Projects",
-      "skills":"Skills",
+      "tecnologies":"Skills",
       "contacts":"Contact"
      },
     "form":{

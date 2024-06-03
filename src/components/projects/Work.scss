@@ -71,10 +71,6 @@
     margin-bottom: 20px;
     background-color: white;
     box-shadow: 3px 5px 5px rgba(122, 218, 224, 0.356);
-    height: auto;
-    &:hover{
-      border: solid 5px rgb(4, 70, 75);
-    }
 
     @media all and (min-width: 768px) {
       width: 570px;
@@ -83,6 +79,7 @@
     }
     @media all and (min-width: 1200px) {
       width: 400px;
+      height: 445px;
     }
 
     &--title {
@@ -213,11 +210,6 @@
     margin-bottom: 20px;
     background-color: white;
     box-shadow: 3px 5px 5px rgba(122, 218, 224, 0.356);
-    height: auto;
-    &:hover{
-      border: solid 5px rgb(4, 70, 75);
-    }
-
     @media all and (min-width: 768px) {
       width: 570px;
       margin: 10px;
@@ -225,6 +217,7 @@
     }
     @media all and (min-width: 1200px) {
       width: 400px;
+      height: 445px;
     }
 
     &--title {

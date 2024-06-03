@@ -47,7 +47,7 @@ const Form = ({
           rows="5"
           className={`form-${isdarkMode()}__textarea`}
           placeholder={
-            translate ? "Leave me a little message" : "Enviame un mensajito"
+            translate ? "Leave me a message" : "Enviame un mensaje"
           }
           value={textarea}
           onChange={handleSubmitTextarea}
